@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBuddy - Your Personal Travel Companion</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fas fa-globe-americas"></i> TravelBuddy
+        </div>
+        <div class="controls">
+          <div class="link"><i class="fas fa-compass"></i> Explore</div>
+          <div class="link">
+            <i class="fas fa-map-marked-alt"></i> Destinations
+          </div>
+          <div class="link"><i class="fas fa-user-circle"></i> Profile</div>
+          <div class="button"><i class="fas fa-sign-out-alt"></i> Logout</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-header">
+          <div class="title">Current Location</div>
+          <div class="live-badge">Live</div>
+        </div>
+
+        <div class="hero-content">
+          <div class="left section">
+            <div class="location-image">
+              <img
+                src="./images/nepal-village.jpg"
+                alt="Beautiful view of a Nepalese village"
+              />
+              <div class="image-tag">Pokhara, Nepal</div>
+            </div>
+            <div class="location-details">
+              <div class="location-name">Pokhara Valley</div>
+              <div class="location-description">
+                Nestled in the foothills of the Annapurna range, Pokhara is
+                Nepal's adventure capital and a gateway to the Himalayas. Known
+                for its tranquil lakes, panoramic mountain views, and vibrant
+                culture, this picturesque valley offers unforgettable
+                experiences for travelers seeking both relaxation and adventure.
+              </div>
+              <div class="location-tags">
+                <span class="tag"
+                  ><i class="fas fa-mountain"></i> Mountains</span
+                >
+                <span class="tag"><i class="fas fa-water"></i> Lakes</span>
+                <span class="tag"><i class="fas fa-hiking"></i> Trekking</span>
+                <span class="tag"><i class="fas fa-utensils"></i> Food</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="right section">
+            <div class="weather">
+              <div class="temperature">
+                <div class="title">Weather</div>
+                <div class="degree">23°C</div>
+                <div class="sky">
+                  <i class="fas fa-cloud-sun"></i> Partly Cloudy
+                </div>
+                <div class="forecast">H: 25°C | L: 18°C</div>
+              </div>
+              <div class="location-stats">
+                <div class="row">
+                  <div class="key">
+                    <i class="fas fa-users"></i> Population:
+                  </div>
+                  <div class="value">350,000</div>
+                </div>
+                <div class="row">
+                  <div class="key">
+                    <i class="fas fa-language"></i> Language:
+                  </div>
+                  <div class="value">Nepali</div>
+                </div>
+                <div class="row">
+                  <div class="key"><i class="fas fa-clock"></i> Time Zone:</div>
+                  <div class="value">GMT+5:45</div>
+                </div>
+                <div class="row">
+                  <div class="key">
+                    <i class="fas fa-money-bill-wave"></i> Currency:
+                  </div>
+                  <div class="value">NPR</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="attractions">
+        <h2 class="section-title">
+          <i class="fas fa-star"></i> Popular Attractions Nearby
+        </h2>
+        <div class="attractions-grid">
+          <div class="attraction-card">
+            <div class="attraction-image">
+              <img src="./images/phewa-lake.webp" alt="Phewa Lake" />
+            </div>
+            <div class="attraction-info">
+              <h3>Phewa Lake</h3>
+              <p class="distance">
+                <i class="fas fa-map-marker-alt"></i> 1.2 km away
+              </p>
+              <p class="description">
+                Beautiful freshwater lake with mountain reflections.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.5</span>
+              </div>
+            </div>
+          </div>
+          <div class="attraction-card">
+            <div class="attraction-image">
+              <img src="./images/mahendra-cave.avif" alt="Phewa Lake" />
+            </div>
+            <div class="attraction-info">
+              <h3>Mahendra Cave</h3>
+              <p class="distance">
+                <i class="fas fa-map-marker-alt"></i> 1.2 km away
+              </p>
+              <p class="description">
+                Dark cave for those adventure and exploring enthusiasts.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.5</span>
+              </div>
+            </div>
+          </div>
+          <div class="attraction-card">
+            <div class="attraction-image">
+              <img
+                src="./images/World Peace Pagoda.jpg"
+                alt="World Peace Pagoda"
+              />
+            </div>
+            <div class="attraction-info">
+              <h3>World Peace Pagoda</h3>
+              <p class="distance">
+                <i class="fas fa-map-marker-alt"></i> 3.5 km away
+              </p>
+              <p class="description">
+                Buddhist stupa with panoramic views of the Himalayan range.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+          </div>
+          <div class="attraction-card">
+            <div class="attraction-image">
+              <img src="./images/davis falls.jpeg" alt="Davis Falls" />
+            </div>
+            <div class="attraction-info">
+              <h3>Davis Falls</h3>
+              <p class="distance">
+                <i class="fas fa-map-marker-alt"></i> 2.7 km away
+              </p>
+              <p class="description">
+                Unique waterfall that flows directly into an underground tunnel.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>4.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="itinerary">
+        <h2 class="section-title">
+          <i class="fas fa-route"></i> Suggested Daily Itinerary
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">8:00 AM</div>
+            <div class="activity">
+              <h3>Sunrise at Sarangkot</h3>
+              <p>Witness breathtaking sunrise views of the Himalayan range</p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">10:30 AM</div>
+            <div class="activity">
+              <h3>Boat Tour on Phewa Lake</h3>
+              <p>Enjoy a serene boat ride with mountain reflections</p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">1:00 PM</div>
+            <div class="activity">
+              <h3>Lunch at Lakeside</h3>
+              <p>Enjoy local Nepali cuisine at a lakeside restaurant</p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">3:00 PM</div>
+            <div class="activity">
+              <h3>Visit Peace Pagoda</h3>
+              <p>Hike to the World Peace Pagoda for panoramic views</p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">7:00 PM</div>
+            <div class="activity">
+              <h3>Dinner and Cultural Show</h3>
+              <p>Experience traditional Nepali dance and music</p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <i class="fas fa-globe-americas"></i> TravelBuddy
+          </div>
+          <p>
+            Your trusted companion for authentic travel experiences around the
+            world.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to receive travel tips and exclusive offers</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="button">Subscribe</button>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TravelBuddy. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize the map
+      let map;
+      let marker;
+
+      // Coordinates for Pokhara, Nepal
+      const pokharaCoords = { lat: 28.2096, lng: 83.9856 };
+
+      // Initialize map function
+      function initMap() {
+        // Map options
+        const mapOptions = {
+          center: pokharaCoords,
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.TOP_RIGHT,
+          },
+          fullscreenControl: true,
+          streetViewControl: true,
+          zoomControl: false, // We'll use our custom controls
+        };
+
+        // Create new map
+        map = new google.maps.Map(
+          document.getElementById("googleMap"),
+          mapOptions
+        );
+
+        // Add main marker for Pokhara
+        marker = new google.maps.Marker({
+          position: pokharaCoords,
+          map: map,
+          title: "Pokhara Valley",
+          animation: google.maps.Animation.DROP,
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            scale: 10,
+            fillColor: "#00838f",
+            fillOpacity: 0.8,
+            strokeColor: "#005662",
+            strokeWeight: 2,
+          },
+        });
+
+        // Add info window
+        const infoContent = `
+          <div class="info-window">
+            <h3>Pokhara Valley</h3>
+            <p>Your current location in Nepal</p>
+            <p><strong>Coordinates:</strong> 28.209°N, 83.985°E</p>
+          </div>
+        `;
+
+        const infoWindow = new google.maps.InfoWindow({
+          content: infoContent,
+        });
+
+        // Open info window when marker is clicked
+        marker.addListener("click", () => {
+          infoWindow.open(map, marker);
+        });
+
+        // Add attractions markers
+        addAttractionMarkers();
+
+        // Setup custom controls
+        document.getElementById("zoomIn").addEventListener("click", () => {
+          map.setZoom(map.getZoom() + 1);
+        });
+
+        document.getElementById("zoomOut").addEventListener("click", () => {
+          map.setZoom(map.getZoom() - 1);
+        });
+
+        document
+          .getElementById("showNearby")
+          .addEventListener("click", toggleNearbyPlaces);
+        document
+          .getElementById("directions")
+          .addEventListener("click", showDirections);
+      }
+
+      // Attractions data
+      const attractions = [
+        {
+          name: "Phewa Lake",
+          position: { lat: 28.2151, lng: 83.9461 },
+          icon: "water",
+          description: "Beautiful freshwater lake with mountain reflections.",
+        },
+        {
+          name: "World Peace Pagoda",
+          position: { lat: 28.1997, lng: 83.9456 },
+          icon: "landmark",
+          description:
+            "Buddhist stupa with panoramic views of the Himalayan range.",
+        },
+        {
+          name: "Davis Falls",
+          position: { lat: 28.1941, lng: 83.9591 },
+          icon: "water",
+          description:
+            "Unique waterfall that flows directly into an underground tunnel.",
+        },
+        {
+          name: "Mahendra Cave",
+          position: { lat: 28.2478, lng: 83.9937 },
+          icon: "cave",
+          description: "Large limestone cave with impressive formations.",
+        },
+        {
+          name: "International Mountain Museum",
+          position: { lat: 28.1936, lng: 83.9988 },
+          icon: "museum",
+          description:
+            "Museum dedicated to the mountains of Nepal and mountaineering history.",
+        },
+      ];
+
+      // Nearby places markers and data
+      let placesMarkers = [];
+      let nearbyPlacesVisible = false;
+
+      // Function to add attraction markers
+      function addAttractionMarkers() {
+        attractions.forEach((attraction) => {
+          const attractionMarker = new google.maps.Marker({
+            position: attraction.position,
+            map: map,
+            title: attraction.name,
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              scale: 7,
+              fillColor: "#4fb3bf",
+              fillOpacity: 0.7,
+              strokeColor: "#005662",
+              strokeWeight: 1,
+            },
+          });
+
+          const infoContent = `
+            <div class="info-window">
+              <h3>${attraction.name}</h3>
+              <p>${attraction.description}</p>
+              <button onclick="getDirections(${attraction.position.lat}, ${attraction.position.lng})" 
+                      style="background-color:#00838f; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;">
+                Get Directions
+              </button>
+            </div>
+          `;
+
+          const infoWindow = new google.maps.InfoWindow({
+            content: infoContent,
+          });
+
+          attractionMarker.addListener("click", () => {
+            infoWindow.open(map, attractionMarker);
+          });
+        });
+      }
+
+      // Function to toggle nearby places (cafes, restaurants, etc.)
+      function toggleNearbyPlaces() {
+        if (nearbyPlacesVisible) {
+          // Clear existing markers
+          placesMarkers.forEach((marker) => marker.setMap(null));
+          placesMarkers = [];
+          nearbyPlacesVisible = false;
+        } else {
+          // Sample nearby places (in a real app, would use Places API)
+          const nearbyPlaces = [
+            {
+              name: "Busy Bee Cafe",
+              position: { lat: 28.2103, lng: 83.9563 },
+              type: "cafe",
+            },
+            {
+              name: "Olive Garden",
+              position: { lat: 28.2117, lng: 83.9556 },
+              type: "restaurant",
+            },
+            {
+              name: "Moondance Restaurant",
+              position: { lat: 28.2132, lng: 83.9571 },
+              type: "restaurant",
+            },
+            {
+              name: "AM/PM Organic Cafe",
+              position: { lat: 28.2091, lng: 83.9545 },
+              type: "cafe",
+            },
+            {
+              name: "Gurkha Bar",
+              position: { lat: 28.2107, lng: 83.9582 },
+              type: "bar",
+            },
+          ];
+
+          // Add markers for nearby places
+          nearbyPlaces.forEach((place) => {
+            const placeMarker = new google.maps.Marker({
+              position: place.position,
+              map: map,
+              title: place.name,
+              icon: {
+                path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+                scale: 5,
+                fillColor: "#4ade80",
+                fillOpacity: 0.7,
+                strokeColor: "#065f46",
+                strokeWeight: 1,
+              },
+            });
+
+            const infoContent = `
+              <div class="info-window">
+                <h3>${place.name}</h3>
+                <p>Type: ${place.type}</p>
+                <button onclick="getDirections(${place.position.lat}, ${place.position.lng})" 
+                        style="background-color:#00838f; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;">
+                  Get Directions
+                </button>
+              </div>
+            `;
+
+            const infoWindow = new google.maps.InfoWindow({
+              content: infoContent,
+            });
+
+            placeMarker.addListener("click", () => {
+              infoWindow.open(map, placeMarker);
+            });
+
+            placesMarkers.push(placeMarker);
+          });
+
+          nearbyPlacesVisible = true;
+        }
+      }
+
+      // Function to show directions
+      function showDirections() {
+        alert(
+          "In a real app, this would open the directions interface. Select a destination on the map to get directions."
+        );
+      }
+
+      // Function to get directions to a specific location
+      function getDirections(lat, lng) {
+        // In a real app, this would use the Directions API
+        alert(`Getting directions to location at ${lat}, ${lng}`);
+
+        // Example of drawing a route (simplified)
+        const directionsService = new google.maps.DirectionsService();
+        const directionsRenderer = new google.maps.DirectionsRenderer({
+          map: map,
+          suppressMarkers: true,
+        });
+
+        const request = {
+          origin: pokharaCoords,
+          destination: { lat: lat, lng: lng },
+          travelMode: google.maps.TravelMode.WALKING,
+        };
+
+        directionsService.route(request, (result, status) => {
+          if (status === google.maps.DirectionsStatus.OK) {
+            directionsRenderer.setDirections(result);
+          }
+        });
+      }
+
+      // Call the initMap function when the page loads
+      window.onload = function () {
+        // Check if Google Maps API is loaded
+        if (typeof google !== "undefined") {
+          initMap();
+        } else {
+          // If API not loaded yet, add a listener
+          window.initMap = initMap;
+        }
+      };
+    </script>
+
+    <!-- Google Maps API with callback -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVpz8p6HEDFzQUtKcH2ATCHWm0yP_I-OE&libraries=places&callback=initMap"
+      defer
+    ></script>
+  </body>
+</html>
