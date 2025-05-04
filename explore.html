@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBuddy - Explore</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/explore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="/index.html">
+          <i class="fas fa-globe-americas"></i> TravelBuddy
+        </a>
+        <div class="controls">
+          <a class="link active" href="/explore.html"
+            ><i class="fas fa-compass"></i> Explore</a
+          >
+          <a class="link" href="/profile.html"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+          <a class="button login-button" href="/login.html"
+            ><i class="fas fa-sign-in-alt"></i> Login</a
+          >
+
+          <!-- <div class="button"><i class="fas fa-sign-out-alt"></i> Logout</div> -->
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="explore-header">
+        <div class="header-content">
+          <h1><i class="fas fa-compass"></i> Explore</h1>
+          <p>Discover amazing travel experiences shared by the community</p>
+        </div>
+        <div class="create-post-button">
+          <button class="button">
+            <i class="fas fa-plus"></i> Share Experience
+          </button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <div class="filter-options">
+          <div class="filter active">All</div>
+          <div class="filter"><i class="fas fa-fire"></i> Trending</div>
+          <div class="filter"><i class="fas fa-star"></i> Top Rated</div>
+          <div class="filter"><i class="fas fa-clock"></i> Recent</div>
+          <div class="filter"><i class="fas fa-heart"></i> Favorites</div>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search experiences..." />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="posts-container">
+        <!-- Post 1 -->
+        <div class="post-card" data-location="Santorini, Greece">
+          <div class="post-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="user-details">
+                <div class="username">Sarah Johnson</div>
+                <div class="post-time">2 hours ago</div>
+              </div>
+            </div>
+            <div class="location-tag">
+              <i class="fas fa-map-marker-alt"></i> Santorini, Greece
+            </div>
+          </div>
+          <div class="post-content">
+            <div class="post-text">
+              <p>
+                Finally made it to Santorini! The white buildings against the
+                blue sea are even more stunning in person. Spent the day
+                exploring narrow streets and watching the most beautiful sunset
+                I've ever seen from Oia. Definitely worth the hype!
+              </p>
+            </div>
+            <div class="post-image">
+              <img src="./images/nepal-village.jpg" alt="Santorini, Greece" />
+            </div>
+          </div>
+          <div class="post-stats">
+            <div class="stat likes">
+              <i class="fas fa-heart"></i>
+              <span>248 likes</span>
+            </div>
+            <div class="stat comments">
+              <i class="fas fa-comment"></i>
+              <span>32 comments</span>
+            </div>
+            <div class="stat share">
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </div>
+            <div class="stat save">
+              <i class="far fa-bookmark"></i>
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="post-comments">
+            <div class="comment">
+              <div class="comment-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="comment-content">
+                <div class="comment-user">Mike Thomas</div>
+                <div class="comment-text">
+                  Stunning! I'll be there next month. Any restaurant
+                  recommendations?
+                </div>
+                <div class="comment-actions">
+                  <span class="comment-time">1 hour ago</span>
+                  <span class="comment-like">Like</span>
+                  <span class="comment-reply">Reply</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="comment-content">
+                <div class="comment-user">Sarah Johnson</div>
+                <div class="comment-text">
+                  @Mike Definitely try Metaxi Mas - amazing food and views!
+                </div>
+                <div class="comment-actions">
+                  <span class="comment-time">45 minutes ago</span>
+                  <span class="comment-like">Like</span>
+                  <span class="comment-reply">Reply</span>
+                </div>
+              </div>
+            </div>
+            <div class="add-comment">
+              <div class="comment-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <input type="text" placeholder="Add a comment..." />
+              <button class="post-comment-button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post-card" data-location="Kyoto, Japan">
+          <div class="post-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="user-details">
+                <div class="username">David Kim</div>
+                <div class="post-time">Yesterday</div>
+              </div>
+            </div>
+            <div class="location-tag">
+              <i class="fas fa-map-marker-alt"></i> Kyoto, Japan
+            </div>
+          </div>
+          <div class="post-content">
+            <div class="post-text">
+              <p>
+                Early morning at Fushimi Inari Shrine before the crowds arrive.
+                The path of thousands of torii gates feels like stepping into
+                another world. Spent 3 hours hiking to the top of the mountain -
+                worth every step!
+              </p>
+            </div>
+            <div class="post-image">
+              <img
+                src="./images/nepal-village.jpg"
+                alt="Fushimi Inari Shrine, Kyoto"
+              />
+            </div>
+          </div>
+          <div class="post-stats">
+            <div class="stat likes">
+              <i class="fas fa-heart"></i>
+              <span>172 likes</span>
+            </div>
+            <div class="stat comments">
+              <i class="fas fa-comment"></i>
+              <span>18 comments</span>
+            </div>
+            <div class="stat share">
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </div>
+            <div class="stat save">
+              <i class="far fa-bookmark"></i>
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="post-comments collapsed">
+            <div class="show-comments">
+              <span>Show 18 comments</span>
+            </div>
+            <div class="add-comment">
+              <div class="comment-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <input type="text" placeholder="Add a comment..." />
+              <button class="post-comment-button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post-card" data-location="Machu Picchu, Peru">
+          <div class="post-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="user-details">
+                <div class="username">Carlos Rodriguez</div>
+                <div class="post-time">3 days ago</div>
+              </div>
+            </div>
+            <div class="location-tag">
+              <i class="fas fa-map-marker-alt"></i> Machu Picchu, Peru
+            </div>
+          </div>
+          <div class="post-content">
+            <div class="post-text">
+              <p>
+                Four-day Inca Trail complete! The journey was challenging but
+                incredible. Seeing Machu Picchu through the Sun Gate at sunrise
+                was a spiritual experience. If you're planning to visit, book
+                your permits at least 6 months in advance.
+              </p>
+            </div>
+            <div class="post-image">
+              <img src="./images/nepal-village.jpg" alt="Machu Picchu, Peru" />
+            </div>
+          </div>
+          <div class="post-stats">
+            <div class="stat likes">
+              <i class="fas fa-heart"></i>
+              <span>419 likes</span>
+            </div>
+            <div class="stat comments">
+              <i class="fas fa-comment"></i>
+              <span>45 comments</span>
+            </div>
+            <div class="stat share">
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </div>
+            <div class="stat save">
+              <i class="far fa-bookmark"></i>
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="post-comments collapsed">
+            <div class="show-comments">
+              <span>Show 45 comments</span>
+            </div>
+            <div class="add-comment">
+              <div class="comment-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <input type="text" placeholder="Add a comment..." />
+              <button class="post-comment-button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="post-card" data-location="Pokhara, Nepal">
+          <div class="post-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="user-details">
+                <div class="username">Alex Chen</div>
+                <div class="post-time">6 days ago</div>
+              </div>
+            </div>
+            <div class="location-tag">
+              <i class="fas fa-map-marker-alt"></i> Pokhara, Nepal
+            </div>
+          </div>
+          <div class="post-content">
+            <div class="post-text">
+              <p>
+                Day 3 of trekking in the Annapurna region. The views of the
+                Himalayan range are breathtaking! Just had the most delicious
+                dal bhat at a local teahouse. The hospitality of the Nepalese
+                people is incredible!
+              </p>
+            </div>
+            <div class="post-image">
+              <img src="./images/nepal-village.jpg" alt="Annapurna, Nepal" />
+            </div>
+          </div>
+          <div class="post-stats">
+            <div class="stat likes">
+              <i class="fas fa-heart"></i>
+              <span>312 likes</span>
+            </div>
+            <div class="stat comments">
+              <i class="fas fa-comment"></i>
+              <span>29 comments</span>
+            </div>
+            <div class="stat share">
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </div>
+            <div class="stat save">
+              <i class="far fa-bookmark"></i>
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="post-comments collapsed">
+            <div class="show-comments">
+              <span>Show 29 comments</span>
+            </div>
+            <div class="add-comment">
+              <div class="comment-avatar">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                  alt="User Avatar"
+                />
+              </div>
+              <input type="text" placeholder="Add a comment..." />
+              <button class="post-comment-button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="load-more">
+        <button class="load-more-button">
+          <i class="fas fa-sync-alt"></i> Load More
+        </button>
+      </div>
+    </main>
+
+    <!-- Trip Details Modal -->
+    <div id="tripDetailsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2 id="modalTripName">Trip Details</h2>
+          <div id="modalTripStatus" class="modal-status">Shared Location</div>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-image">
+            <img
+              id="modalTripImage"
+              src="./images/nepal-village.jpg"
+              alt="Trip Image"
+            />
+          </div>
+
+          <div class="modal-info-grid">
+            <div class="modal-info-section">
+              <h3><i class="fas fa-info-circle"></i> Location Information</h3>
+              <div class="info-item">
+                <span class="label">Location:</span>
+                <span id="modalLocation" class="value">Santorini, Greece</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Shared by:</span>
+                <span id="modalSharedBy" class="value">Sarah Johnson</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Posted:</span>
+                <span id="modalPostedDate" class="value">May 2, 2025</span>
+              </div>
+            </div>
+
+            <div class="modal-info-section">
+              <h3><i class="fas fa-cloud-sun"></i> Weather Forecast</h3>
+              <div class="weather-forecast">
+                <div class="forecast-day">
+                  <div class="day">Today</div>
+                  <div class="icon">
+                    <i class="fas fa-sun"></i>
+                  </div>
+                  <div class="temp">26°C</div>
+                </div>
+                <div class="forecast-day">
+                  <div class="day">Tomorrow</div>
+                  <div class="icon"><i class="fas fa-sun"></i></div>
+                  <div class="temp">25°C</div>
+                </div>
+                <div class="forecast-day">
+                  <div class="day">Day 3</div>
+                  <div class="icon">
+                    <i class="fas fa-cloud-sun"></i>
+                  </div>
+                  <div class="temp">24°C</div>
+                </div>
+                <div class="forecast-day">
+                  <div class="day">Day 4</div>
+                  <div class="icon"><i class="fas fa-cloud-sun"></i></div>
+                  <div class="temp">25°C</div>
+                </div>
+                <div class="forecast-day">
+                  <div class="day">Day 5</div>
+                  <div class="icon">
+                    <i class="fas fa-sun"></i>
+                  </div>
+                  <div class="temp">27°C</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-map-section">
+            <h3><i class="fas fa-map-marked-alt"></i> Location</h3>
+            <div id="modalMap" class="modal-map">
+              <img src="./images/nepal-village.jpg" alt="Location Map" />
+            </div>
+          </div>
+
+          <div class="modal-attractions">
+            <h3><i class="fas fa-star"></i> Top Attractions</h3>
+            <div class="modal-attractions-grid">
+              <div class="modal-attraction">
+                <img src="./images/nepal-village.jpg" alt="Oia" />
+                <div class="attraction-name">Oia Village</div>
+              </div>
+              <div class="modal-attraction">
+                <img src="./images/nepal-village.jpg" alt="Red Beach" />
+                <div class="attraction-name">Red Beach</div>
+              </div>
+              <div class="modal-attraction">
+                <img src="./images/nepal-village.jpg" alt="Fira" />
+                <div class="attraction-name">Fira</div>
+              </div>
+              <div class="modal-attraction">
+                <img src="./images/nepal-village.jpg" alt="Caldera" />
+                <div class="attraction-name">Caldera View</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-user-experience">
+            <h3><i class="fas fa-quote-left"></i> Traveler's Experience</h3>
+            <div class="experience-content">
+              <p>
+                Finally made it to Santorini! The white buildings against the
+                blue sea are even more stunning in person. Spent the day
+                exploring narrow streets and watching the most beautiful sunset
+                I've ever seen from Oia. Definitely worth the hype!
+              </p>
+              <p class="tips-heading">
+                <i class="fas fa-lightbulb"></i> Traveler Tips:
+              </p>
+              <ul class="tips-list">
+                <li>
+                  Visit Oia for sunset, but arrive early to get a good spot
+                </li>
+                <li>
+                  Try the local wine and seafood - especially at Amoudi Bay
+                </li>
+                <li>
+                  Rent an ATV to explore the island - much easier than driving
+                </li>
+                <li>
+                  Book accommodations with caldera views months in advance
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="modal-button">
+            <i class="fas fa-heart"></i> Like
+          </button>
+          <button class="modal-button">
+            <i class="fas fa-comment"></i> Comment
+          </button>
+          <button class="modal-button primary">
+            <i class="fas fa-bookmark"></i> Save Location
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <i class="fas fa-globe-americas"></i> TravelBuddy
+          </div>
+          <p>
+            Your trusted companion for authentic travel experiences around the
+            world.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to receive travel tips and exclusive offers</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="button">Subscribe</button>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TravelBuddy. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mock script for functionality demonstration
+      document.addEventListener("DOMContentLoaded", function () {
+        // Modal functionality
+        const modal = document.getElementById("tripDetailsModal");
+        const closeModal = document.querySelector(".close-modal");
+        const postCards = document.querySelectorAll(".post-card");
+
+        // Show comments functionality
+        const showCommentsButtons = document.querySelectorAll(".show-comments");
+
+        // Like functionality
+        const likeButtons = document.querySelectorAll(".stat.likes");
+
+        // Open modal when clicking on post cards
+        postCards.forEach((card) => {
+          card.addEventListener("click", function (e) {
+            // Don't open modal if clicking on comment input or buttons
+            if (
+              e.target.closest(".add-comment") ||
+              e.target.closest(".comment") ||
+              e.target.closest(".post-stats") ||
+              e.target.closest(".show-comments")
+            ) {
+              return;
+            }
+
+            const location = this.getAttribute("data-location");
+            document.getElementById("modalLocation").textContent = location;
+            document.getElementById("modalTripName").textContent = location;
+
+            // Update other modal content based on the post data
+            const username = this.querySelector(".username").textContent;
+            document.getElementById("modalSharedBy").textContent = username;
+
+            const userExperience =
+              this.querySelector(".post-text p").textContent;
+            document.querySelector(".experience-content p").textContent =
+              userExperience;
+
+            modal.style.display = "block";
+          });
+        });
+
+        // Close modal
+        closeModal.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener("click", function (e) {
+          if (e.target == modal) {
+            modal.style.display = "none";
+          }
+        });
+
+        // Toggle comments view
+        showCommentsButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const commentsSection = this.closest(".post-comments");
+            commentsSection.classList.toggle("collapsed");
+            commentsSection.classList.toggle("expanded");
+
+            if (commentsSection.classList.contains("expanded")) {
+              this.innerHTML = "<span>Hide comments</span>";
+              // In a real app, we would fetch and load comments here
+
+              // For demo, let's add some sample comments
+              const commentHTML = `
+                <div class="comment">
+                  <div class="comment-avatar">
+                    <img src="./images/nepal-village.jpg" alt="User Avatar" />
+                  </div>
+                  <div class="comment-content">
+                    <div class="comment-user">Emily Wilson</div>
+                    <div class="comment-text">This looks incredible! Adding to my bucket list!</div>
+                    <div class="comment-actions">
+                      <span class="comment-time">5 hours ago</span>
+                      <span class="comment-like">Like</span>
+                      <span class="comment-reply">Reply</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="comment-avatar">
+                    <img src="./images/nepal-village.jpg" alt="User Avatar" />
+                  </div>
+                  <div class="comment-content">
+                    <div class="comment-user">James Lee</div>
+                    <div class="comment-text">How many days would you recommend staying there?</div>
+                    <div class="comment-actions">
+                      <span class="comment-time">3 hours ago</span>
+                      <span class="comment-like">Like</span>
+                      <span class="comment-reply">Reply</span>
+                    </div>
+                  </div>
+                </div>
+              `;
+
+              // Insert before the "show comments" button
+              this.insertAdjacentHTML("beforebegin", commentHTML);
+            } else {
+              this.innerHTML =
+                "<span>Show " +
+                this.closest(".post-card").querySelector(".stat.comments span")
+                  .textContent +
+                "</span>";
+              // Remove the sample comments
+              const comments = commentsSection.querySelectorAll(".comment");
+              comments.forEach((comment) => {
+                if (!comment.closest(".add-comment")) {
+                  comment.remove();
+                }
+              });
+            }
+          });
+        });
+
+        // Like functionality
+        likeButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.stopPropagation(); // Prevent opening modal
+            const icon = this.querySelector("i");
+            const likeCount = this.querySelector("span");
+
+            if (icon.classList.contains("fas")) {
+              // Unlike
+              icon.classList.remove("fas");
+              icon.classList.add("far");
+              let count = parseInt(likeCount.textContent) - 1;
+              likeCount.textContent = count + " likes";
+            } else {
+              // Like
+              icon.classList.remove("far");
+              icon.classList.add("fas");
+              let count = parseInt(likeCount.textContent) + 1;
+              likeCount.textContent = count + " likes";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

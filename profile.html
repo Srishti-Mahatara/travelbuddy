@@ -1,0 +1,3065 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBuddy - User Profile</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="/index.html">
+          <i class="fas fa-globe-americas"></i> TravelBuddy
+        </a>
+        <div class="controls">
+          <a class="link" href="/explore.html"
+            ><i class="fas fa-compass"></i> Explore</a
+          >
+          <a class="link active" href="/profile.html"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+          <a class="button login-button" href="/login.html"
+            ><i class="fas fa-sign-in-alt"></i> Login</a
+          >
+
+          <!-- <div class="button"><i class="fas fa-sign-out-alt"></i> Logout</div> -->
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="profile-container">
+        <div class="profile-header">
+          <div class="profile-cover">
+            <div class="profile-avatar">
+              <img
+                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                alt="User Avatar"
+              />
+            </div>
+          </div>
+          <div class="profile-info">
+            <h1>Alex Johnson</h1>
+            <p class="profile-tagline">
+              Adventure seeker | Mountain lover | 35 countries visited
+            </p>
+            <div class="profile-stats">
+              <div class="stat">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>35 Countries</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-plane"></i>
+                <span>120 Trips</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-camera"></i>
+                <span>540 Photos</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-star"></i>
+                <span>95 Reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-content">
+          <div class="sidebar">
+            <ul class="tab-links">
+              <li class="tab-link active" data-tab="dashboard">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+              </li>
+              <li class="tab-link" data-tab="personal-info">
+                <i class="fas fa-user"></i> Personal Info
+              </li>
+              <li class="tab-link" data-tab="posts">
+                <i class="fas fa-images"></i> My Posts
+              </li>
+              <li class="tab-link" data-tab="bookmarks">
+                <i class="fas fa-bookmark"></i> Bookmarks
+              </li>
+              <li class="tab-link" data-tab="trips">
+                <i class="fas fa-suitcase"></i> My Trips
+              </li>
+              <li class="tab-link" data-tab="itineraries">
+                <i class="fas fa-route"></i> Saved Itineraries
+              </li>
+              <li class="tab-link" data-tab="reviews">
+                <i class="fas fa-comment"></i> My Reviews
+              </li>
+              <li class="tab-link" data-tab="settings">
+                <i class="fas fa-cog"></i> Account Settings
+              </li>
+              <li class="tab-link" data-tab="newsletter">
+                <i class="fas fa-envelope"></i> Email Preferences
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <!-- Dashboard Page -->
+            <div id="dashboard" class="tab-pane active">
+              <h2 class="section-title">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+              </h2>
+              <div class="dashboard-stats">
+                <div class="stat-card">
+                  <div class="stat-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                  </div>
+                  <div class="stat-details">
+                    <h3>3</h3>
+                    <p>Upcoming Trips</p>
+                  </div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="stat-details">
+                    <h3>12</h3>
+                    <p>Saved Places</p>
+                  </div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-icon">
+                    <i class="fas fa-route"></i>
+                  </div>
+                  <div class="stat-details">
+                    <h3>5</h3>
+                    <p>Itineraries</p>
+                  </div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-icon">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <div class="stat-details">
+                    <h3>8</h3>
+                    <p>Notifications</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                  <div class="activity-item">
+                    <div class="activity-icon">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                    <div class="activity-details">
+                      <p>You bookmarked <strong>Santorini Island</strong></p>
+                      <span class="activity-time">2 days ago</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-icon">
+                      <i class="fas fa-comment"></i>
+                    </div>
+                    <div class="activity-details">
+                      <p>
+                        You reviewed <strong>Hotel Himalaya, Kathmandu</strong>
+                      </p>
+                      <span class="activity-time">5 days ago</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-icon">
+                      <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="activity-details">
+                      <p>
+                        You completed your trip to
+                        <strong>Pokhara, Nepal</strong>
+                      </p>
+                      <span class="activity-time">1 week ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personal Information -->
+            <div id="personal-info" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-user"></i> Personal Information
+              </h2>
+
+              <div class="info-block">
+                <h3>Basic Information</h3>
+                <div class="info-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="text" id="firstName" value="Alex" />
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" id="lastName" value="Johnson" />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input
+                        type="email"
+                        id="email"
+                        value="alex.johnson@email.com"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="tel" id="phone" value="+1 (555) 123-4567" />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="dob">Date of Birth</label>
+                      <input type="date" id="dob" value="1988-06-15" />
+                    </div>
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select id="gender">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-binary</option>
+                        <option value="prefer-not">Prefer not to say</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="location">Current Location</label>
+                      <input
+                        type="text"
+                        id="location"
+                        value="San Francisco, CA, USA"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="language">Primary Language</label>
+                      <select id="language">
+                        <option value="english" selected>English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="mandarin">Mandarin</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Travel Profile</h3>
+                <div class="info-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="passport">Passport Number</label>
+                      <input type="text" id="passport" value="US12345678" />
+                    </div>
+                    <div class="form-group">
+                      <label for="passportExpiry">Passport Expiry</label>
+                      <input
+                        type="date"
+                        id="passportExpiry"
+                        value="2028-09-20"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="nationality">Nationality</label>
+                      <input
+                        type="text"
+                        id="nationality"
+                        value="United States"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="travelFrequency">Travel Frequency</label>
+                      <select id="travelFrequency">
+                        <option value="monthly" selected>Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="biannually">Biannually</option>
+                        <option value="annually">Annually</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Frequent Flyer Programs</label>
+                    <div class="tag-container">
+                      <div class="tag">
+                        United Airlines <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">
+                        Delta SkyMiles <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">
+                        British Airways <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">Add new <i class="fas fa-plus"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Hotel Loyalty Programs</label>
+                    <div class="tag-container">
+                      <div class="tag">
+                        Marriott Bonvoy <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">
+                        Hilton Honors <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">Add new <i class="fas fa-plus"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Travel Preferences</h3>
+                <div class="info-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="travelStyle">Preferred Travel Style</label>
+                      <select id="travelStyle">
+                        <option value="adventure" selected>Adventure</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="budget">Budget</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="eco">Eco-friendly</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="accommodation">Preferred Accommodation</label>
+                      <select id="accommodation">
+                        <option value="hotel" selected>Hotel</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="resort">Resort</option>
+                        <option value="camping">Camping</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="budget">Average Budget per Trip</label>
+                      <select id="budget">
+                        <option value="budget">Under $1,000</option>
+                        <option value="midrange" selected>
+                          $1,000 - $3,000
+                        </option>
+                        <option value="luxury">$3,000 - $5,000</option>
+                        <option value="ultraluxury">$5,000+</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="tripDuration">Typical Trip Duration</label>
+                      <select id="tripDuration">
+                        <option value="weekend">Weekend (1-3 days)</option>
+                        <option value="short" selected>Short (4-7 days)</option>
+                        <option value="medium">Medium (8-14 days)</option>
+                        <option value="long">Long (15+ days)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Travel Interests</label>
+                    <div class="tag-container">
+                      <div class="tag">Hiking <i class="fas fa-times"></i></div>
+                      <div class="tag">
+                        Photography <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">
+                        Food & Dining <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">
+                        History <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">
+                        Adventure Sports <i class="fas fa-times"></i>
+                      </div>
+                      <div class="tag">Add new <i class="fas fa-plus"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>About Me</h3>
+                <div class="info-form">
+                  <div class="form-group full-width">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" rows="5">
+                      Passionate traveler with a love for mountains and outdoor adventures. I've been exploring the world for over 10 years, with a particular focus on hiking trails and remote destinations. My goal is to visit all seven continents and experience the unique cultures and landscapes each has to offer.</textarea
+                    >
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="funFact">Fun Fact</label>
+                    <input
+                      type="text"
+                      id="funFact"
+                      value="I once hiked the entire Appalachian Trail in a single summer!"
+                    />
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Languages Spoken</label>
+                    <div class="language-levels">
+                      <div class="language-item">
+                        <span>English</span>
+                        <div class="level-indicator">
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                        </div>
+                        <span class="level-text">Native</span>
+                      </div>
+                      <div class="language-item">
+                        <span>Spanish</span>
+                        <div class="level-indicator">
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                          <span class="level"></span>
+                          <span class="level"></span>
+                        </div>
+                        <span class="level-text">Intermediate</span>
+                      </div>
+                      <div class="language-item">
+                        <span>French</span>
+                        <div class="level-indicator">
+                          <span class="level active"></span>
+                          <span class="level active"></span>
+                          <span class="level"></span>
+                          <span class="level"></span>
+                          <span class="level"></span>
+                        </div>
+                        <span class="level-text">Basic</span>
+                      </div>
+                      <div class="language-item">
+                        <span class="add-language"
+                          ><i class="fas fa-plus"></i> Add Language</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="button secondary">Cancel Changes</button>
+                <button class="button">Save Changes</button>
+              </div>
+            </div>
+
+            <!-- Bookmarks -->
+            <div id="bookmarks" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-bookmark"></i> My Bookmarks
+              </h2>
+
+              <div class="bookmarks-controls">
+                <div class="search-filter">
+                  <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input
+                      type="text"
+                      placeholder="Search your bookmarks..."
+                      id="bookmark-search"
+                    />
+                  </div>
+                  <div class="filter-options">
+                    <select id="bookmark-type-filter">
+                      <option value="all">All Types</option>
+                      <option value="attraction">Attractions</option>
+                      <option value="restaurant">Restaurants</option>
+                      <option value="hotel">Hotels</option>
+                      <option value="activity">Activities</option>
+                    </select>
+                    <select id="bookmark-date-filter">
+                      <option value="all">Any Time</option>
+                      <option value="week">Last Week</option>
+                      <option value="month">Last Month</option>
+                      <option value="3months">Last 3 Months</option>
+                      <option value="year">Last Year</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="view-controls">
+                  <span class="view-option active" data-view="grid">
+                    <i class="fas fa-th"></i>
+                  </span>
+                  <span class="view-option" data-view="list">
+                    <i class="fas fa-list"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="bookmark-stats">
+                <div class="stat-pill">
+                  <i class="fas fa-globe-americas"></i>
+                  <span>12 Countries</span>
+                </div>
+                <div class="stat-pill">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>24 Cities</span>
+                </div>
+                <div class="stat-pill">
+                  <i class="fas fa-bookmark"></i>
+                  <span>46 Total Bookmarks</span>
+                </div>
+              </div>
+
+              <div class="bookmarks-grid" id="bookmarks-container">
+                <!-- Bookmark Item 1 -->
+                <div
+                  class="bookmark-item"
+                  data-type="attraction"
+                  data-date="2025-04-02"
+                >
+                  <div class="bookmark-image">
+                    <img
+                      src="https://api.dicebear.com/7.x/shapes/svg?seed=santorini"
+                      alt="Santorini Island"
+                    />
+                    <div class="bookmark-type attraction">
+                      <i class="fas fa-landmark"></i> Attraction
+                    </div>
+                    <div class="bookmark-actions">
+                      <span
+                        class="bookmark-action"
+                        title="Remove from bookmarks"
+                      >
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      <span class="bookmark-action" title="Add to trip">
+                        <i class="fas fa-suitcase-rolling"></i>
+                      </span>
+                      <span class="bookmark-action" title="Share">
+                        <i class="fas fa-share-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bookmark-info">
+                    <h3>Santorini Island</h3>
+                    <div class="bookmark-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Cyclades, Greece</span>
+                    </div>
+                    <div class="bookmark-meta">
+                      <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Saved 2 days ago</span>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7</span>
+                      </div>
+                    </div>
+                    <p class="bookmark-notes">
+                      Beautiful white buildings and amazing sunset views. Must
+                      visit during summer.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Bookmark Item 2 -->
+                <div
+                  class="bookmark-item"
+                  data-type="hotel"
+                  data-date="2025-03-12"
+                >
+                  <div class="bookmark-image">
+                    <img
+                      src="https://api.dicebear.com/7.x/shapes/svg?seed=himalaya"
+                      alt="Hotel Himalaya"
+                    />
+                    <div class="bookmark-type hotel">
+                      <i class="fas fa-hotel"></i> Hotel
+                    </div>
+                    <div class="bookmark-actions">
+                      <span
+                        class="bookmark-action"
+                        title="Remove from bookmarks"
+                      >
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      <span class="bookmark-action" title="Add to trip">
+                        <i class="fas fa-suitcase-rolling"></i>
+                      </span>
+                      <span class="bookmark-action" title="Share">
+                        <i class="fas fa-share-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bookmark-info">
+                    <h3>Hotel Himalaya</h3>
+                    <div class="bookmark-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Kathmandu, Nepal</span>
+                    </div>
+                    <div class="bookmark-meta">
+                      <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Saved 3 weeks ago</span>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.0</span>
+                      </div>
+                    </div>
+                    <p class="bookmark-notes">
+                      Great mountain views and excellent service. Traditional
+                      Nepalese architecture.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Bookmark Item 3 -->
+                <div
+                  class="bookmark-item"
+                  data-type="restaurant"
+                  data-date="2025-03-25"
+                >
+                  <div class="bookmark-image">
+                    <img
+                      src="https://api.dicebear.com/7.x/shapes/svg?seed=tokyo"
+                      alt="Sushi Koyama"
+                    />
+                    <div class="bookmark-type restaurant">
+                      <i class="fas fa-utensils"></i> Restaurant
+                    </div>
+                    <div class="bookmark-actions">
+                      <span
+                        class="bookmark-action"
+                        title="Remove from bookmarks"
+                      >
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      <span class="bookmark-action" title="Add to trip">
+                        <i class="fas fa-suitcase-rolling"></i>
+                      </span>
+                      <span class="bookmark-action" title="Share">
+                        <i class="fas fa-share-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bookmark-info">
+                    <h3>Sushi Koyama</h3>
+                    <div class="bookmark-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Tokyo, Japan</span>
+                    </div>
+                    <div class="bookmark-meta">
+                      <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Saved 1 month ago</span>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                      </div>
+                    </div>
+                    <p class="bookmark-notes">
+                      Best sushi in Tokyo! Make reservations at least a month in
+                      advance.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Bookmark Item 4 -->
+                <div
+                  class="bookmark-item"
+                  data-type="activity"
+                  data-date="2025-02-10"
+                >
+                  <div class="bookmark-image">
+                    <img
+                      src="https://api.dicebear.com/7.x/shapes/svg?seed=bali"
+                      alt="Bali Cooking Class"
+                    />
+                    <div class="bookmark-type activity">
+                      <i class="fas fa-hiking"></i> Activity
+                    </div>
+                    <div class="bookmark-actions">
+                      <span
+                        class="bookmark-action"
+                        title="Remove from bookmarks"
+                      >
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      <span class="bookmark-action" title="Add to trip">
+                        <i class="fas fa-suitcase-rolling"></i>
+                      </span>
+                      <span class="bookmark-action" title="Share">
+                        <i class="fas fa-share-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bookmark-info">
+                    <h3>Bali Cooking Class</h3>
+                    <div class="bookmark-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Ubud, Bali, Indonesia</span>
+                    </div>
+                    <div class="bookmark-meta">
+                      <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Saved 3 months ago</span>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                      </div>
+                    </div>
+                    <p class="bookmark-notes">
+                      Learn to cook authentic Balinese dishes. Includes market
+                      visit and recipe book.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Bookmark Item 5 -->
+                <div
+                  class="bookmark-item"
+                  data-type="attraction"
+                  data-date="2025-01-15"
+                >
+                  <div class="bookmark-image">
+                    <img
+                      src="https://api.dicebear.com/7.x/shapes/svg?seed=machu"
+                      alt="Machu Picchu"
+                    />
+                    <div class="bookmark-type attraction">
+                      <i class="fas fa-landmark"></i> Attraction
+                    </div>
+                    <div class="bookmark-actions">
+                      <span
+                        class="bookmark-action"
+                        title="Remove from bookmarks"
+                      >
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      <span class="bookmark-action" title="Add to trip">
+                        <i class="fas fa-suitcase-rolling"></i>
+                      </span>
+                      <span class="bookmark-action" title="Share">
+                        <i class="fas fa-share-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bookmark-info">
+                    <h3>Machu Picchu</h3>
+                    <div class="bookmark-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Cusco Region, Peru</span>
+                    </div>
+                    <div class="bookmark-meta">
+                      <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Saved 4 months ago</span>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                      </div>
+                    </div>
+                    <p class="bookmark-notes">
+                      Book Inca Trail permits well in advance. Best visited
+                      during dry season (May-Oct).
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Bookmark Item 6 -->
+                <div
+                  class="bookmark-item"
+                  data-type="restaurant"
+                  data-date="2024-12-05"
+                >
+                  <div class="bookmark-image">
+                    <img
+                      src="https://api.dicebear.com/7.x/shapes/svg?seed=barcelona"
+                      alt="La Boqueria Market"
+                    />
+                    <div class="bookmark-type restaurant">
+                      <i class="fas fa-utensils"></i> Restaurant
+                    </div>
+                    <div class="bookmark-actions">
+                      <span
+                        class="bookmark-action"
+                        title="Remove from bookmarks"
+                      >
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      <span class="bookmark-action" title="Add to trip">
+                        <i class="fas fa-suitcase-rolling"></i>
+                      </span>
+                      <span class="bookmark-action" title="Share">
+                        <i class="fas fa-share-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="bookmark-info">
+                    <h3>La Boqueria Market</h3>
+                    <div class="bookmark-location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Barcelona, Spain</span>
+                    </div>
+                    <div class="bookmark-meta">
+                      <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Saved 5 months ago</span>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.2</span>
+                      </div>
+                    </div>
+                    <p class="bookmark-notes">
+                      Amazing food market with fresh produce and local
+                      delicacies. Try the fruit smoothies!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagination">
+                <span class="page-item active">1</span>
+                <span class="page-item">2</span>
+                <span class="page-item">3</span>
+                <span class="page-item">...</span>
+                <span class="page-item">8</span>
+              </div>
+
+              <div class="empty-state" style="display: none">
+                <div class="empty-icon">
+                  <i class="fas fa-bookmark"></i>
+                </div>
+                <h3>No bookmarks found</h3>
+                <p>
+                  You don't have any bookmarks that match your current filters.
+                </p>
+                <button class="button">Clear Filters</button>
+              </div>
+            </div>
+
+            <!-- Trips -->
+            <div id="trips" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-suitcase"></i> My Trips
+              </h2>
+
+              <div class="trips-grid">
+                <!-- Current Trip -->
+                <div class="trip-card current" data-trip="pokhara">
+                  <div class="trip-status">Current Trip</div>
+                  <div class="trip-image">
+                    <img
+                      src="./images/nepal-village.jpg"
+                      alt="Pokhara Valley"
+                    />
+                  </div>
+                  <div class="trip-info">
+                    <h3>Pokhara Valley</h3>
+                    <p class="trip-date">
+                      <i class="fas fa-calendar-alt"></i> May 1 - May 8, 2025
+                    </p>
+                    <p class="trip-location">
+                      <i class="fas fa-map-marker-alt"></i> Pokhara, Nepal
+                    </p>
+                    <div class="trip-stats">
+                      <div class="stat">
+                        <i class="fas fa-temperature-high"></i> 23°C
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-cloud-sun"></i> Partly Cloudy
+                      </div>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                  </div>
+                </div>
+
+                <!-- Upcoming Trip -->
+                <div class="trip-card upcoming" data-trip="kathmandu">
+                  <div class="trip-status">Upcoming Trip</div>
+                  <div class="trip-image">
+                    <img src="./images/nepal-village.jpg" alt="Kathmandu" />
+                  </div>
+                  <div class="trip-info">
+                    <h3>Kathmandu</h3>
+                    <p class="trip-date">
+                      <i class="fas fa-calendar-alt"></i> May 9 - May 15, 2025
+                    </p>
+                    <p class="trip-location">
+                      <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal
+                    </p>
+                    <div class="trip-stats">
+                      <div class="stat">
+                        <i class="fas fa-temperature-high"></i> 26°C
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-cloud"></i> Cloudy
+                      </div>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                  </div>
+                </div>
+
+                <!-- Past Trip -->
+                <div class="trip-card past" data-trip="chitwan">
+                  <div class="trip-status">Past Trip</div>
+                  <div class="trip-image">
+                    <img
+                      src="./images/nepal-village.jpg"
+                      alt="Chitwan National Park"
+                    />
+                  </div>
+                  <div class="trip-info">
+                    <h3>Chitwan National Park</h3>
+                    <p class="trip-date">
+                      <i class="fas fa-calendar-alt"></i> Apr 22 - Apr 30, 2025
+                    </p>
+                    <p class="trip-location">
+                      <i class="fas fa-map-marker-alt"></i> Chitwan, Nepal
+                    </p>
+                    <div class="trip-stats">
+                      <div class="stat">
+                        <i class="fas fa-temperature-high"></i> 30°C
+                      </div>
+                      <div class="stat"><i class="fas fa-sun"></i> Sunny</div>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                  </div>
+                </div>
+
+                <!-- Past Trip -->
+                <div class="trip-card past" data-trip="annapurna">
+                  <div class="trip-status">Past Trip</div>
+                  <div class="trip-image">
+                    <img
+                      src="./images/nepal-village.jpg"
+                      alt="Annapurna Circuit"
+                    />
+                  </div>
+                  <div class="trip-info">
+                    <h3>Annapurna Circuit</h3>
+                    <p class="trip-date">
+                      <i class="fas fa-calendar-alt"></i> Apr 10 - Apr 20, 2025
+                    </p>
+                    <p class="trip-location">
+                      <i class="fas fa-map-marker-alt"></i> Annapurna, Nepal
+                    </p>
+                    <div class="trip-stats">
+                      <div class="stat">
+                        <i class="fas fa-temperature-high"></i> 18°C
+                      </div>
+                      <div class="stat"><i class="fas fa-wind"></i> Windy</div>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trip Details Modal -->
+            <div id="tripDetailsModal" class="modal">
+              <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                  <h2 id="modalTripName">Trip Details</h2>
+                  <div id="modalTripStatus" class="modal-status">
+                    Current Trip
+                  </div>
+                </div>
+
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img
+                      id="modalTripImage"
+                      src="./images/nepal-village.jpg"
+                      alt="Trip Image"
+                    />
+                  </div>
+
+                  <div class="modal-info-grid">
+                    <div class="modal-info-section">
+                      <h3>
+                        <i class="fas fa-info-circle"></i> Trip Information
+                      </h3>
+                      <div class="info-item">
+                        <span class="label">Location:</span>
+                        <span id="modalLocation" class="value"
+                          >Pokhara, Nepal</span
+                        >
+                      </div>
+                      <div class="info-item">
+                        <span class="label">Dates:</span>
+                        <span id="modalDates" class="value"
+                          >May 1 - May 8, 2025</span
+                        >
+                      </div>
+                      <div class="info-item">
+                        <span class="label">Duration:</span>
+                        <span id="modalDuration" class="value">7 days</span>
+                      </div>
+                    </div>
+
+                    <div class="modal-info-section">
+                      <h3><i class="fas fa-cloud-sun"></i> Weather Forecast</h3>
+                      <div class="weather-forecast">
+                        <div class="forecast-day">
+                          <div class="day">Today</div>
+                          <div class="icon">
+                            <i class="fas fa-cloud-sun"></i>
+                          </div>
+                          <div class="temp">23°C</div>
+                        </div>
+                        <div class="forecast-day">
+                          <div class="day">Tomorrow</div>
+                          <div class="icon"><i class="fas fa-cloud"></i></div>
+                          <div class="temp">22°C</div>
+                        </div>
+                        <div class="forecast-day">
+                          <div class="day">Day 3</div>
+                          <div class="icon">
+                            <i class="fas fa-cloud-rain"></i>
+                          </div>
+                          <div class="temp">21°C</div>
+                        </div>
+                        <div class="forecast-day">
+                          <div class="day">Day 4</div>
+                          <div class="icon"><i class="fas fa-sun"></i></div>
+                          <div class="temp">24°C</div>
+                        </div>
+                        <div class="forecast-day">
+                          <div class="day">Day 5</div>
+                          <div class="icon">
+                            <i class="fas fa-cloud-sun"></i>
+                          </div>
+                          <div class="temp">23°C</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-map-section">
+                    <h3><i class="fas fa-map-marked-alt"></i> Location</h3>
+                    <div id="modalMap" class="modal-map"></div>
+                  </div>
+
+                  <div class="modal-attractions">
+                    <h3><i class="fas fa-star"></i> Top Attractions</h3>
+                    <div class="modal-attractions-grid">
+                      <div class="modal-attraction">
+                        <img src="./images/phewa-lake.webp" alt="Phewa Lake" />
+                        <div class="attraction-name">Phewa Lake</div>
+                      </div>
+                      <div class="modal-attraction">
+                        <img
+                          src="./images/World Peace Pagoda.jpg"
+                          alt="World Peace Pagoda"
+                        />
+                        <div class="attraction-name">World Peace Pagoda</div>
+                      </div>
+                      <div class="modal-attraction">
+                        <img
+                          src="./images/davis falls.jpeg"
+                          alt="Davis Falls"
+                        />
+                        <div class="attraction-name">Davis Falls</div>
+                      </div>
+                      <div class="modal-attraction">
+                        <img
+                          src="./images/mahendra-cave.avif"
+                          alt="Mahendra Cave"
+                        />
+                        <div class="attraction-name">Mahendra Cave</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button class="modal-button">
+                    <i class="fas fa-edit"></i> Edit Trip
+                  </button>
+                  <button class="modal-button primary">
+                    <i class="fas fa-route"></i> View Itinerary
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Itineraries  -->
+            <div id="itineraries" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-route"></i> Saved Itineraries
+              </h2>
+
+              <div class="itinerary-filters">
+                <div class="filter-group">
+                  <label for="sort-by">Sort by:</label>
+                  <select id="sort-by" class="filter-select">
+                    <option value="date-desc">Date (Newest First)</option>
+                    <option value="date-asc">Date (Oldest First)</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                  </select>
+                </div>
+                <div class="filter-group">
+                  <label for="filter-by">Filter by:</label>
+                  <select id="filter-by" class="filter-select">
+                    <option value="all">All Itineraries</option>
+                    <option value="upcoming">Upcoming</option>
+                    <option value="past">Past</option>
+                    <option value="favorites">Favorites</option>
+                  </select>
+                </div>
+                <button class="create-button">
+                  <i class="fas fa-plus"></i> Create New Itinerary
+                </button>
+              </div>
+
+              <div class="itineraries-grid">
+                <!-- Itinerary Card 1 -->
+                <div class="itinerary-card">
+                  <div class="itinerary-header">
+                    <div class="itinerary-badge upcoming">Upcoming</div>
+                    <div class="itinerary-actions">
+                      <button class="action-btn" title="Edit">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn favorite" title="Favorite">
+                        <i class="fas fa-heart"></i>
+                      </button>
+                      <button class="action-btn" title="Delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="itinerary-image">
+                    <img
+                      src="./images/nepal-village.jpg"
+                      alt="Mountains of Annapurna"
+                    />
+                    <div class="image-tag">Nepal</div>
+                  </div>
+                  <div class="itinerary-content">
+                    <h3>Annapurna Base Camp Trek</h3>
+                    <div class="itinerary-dates">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span>May 10 - May 22, 2025</span>
+                    </div>
+                    <div class="itinerary-destinations">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Kathmandu → Pokhara → Annapurna</span>
+                    </div>
+                    <div class="itinerary-stats">
+                      <div class="stat">
+                        <i class="fas fa-hiking"></i>
+                        <span>12 days</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-mountain"></i>
+                        <span>4,130m altitude</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Guide arranged</span>
+                      </div>
+                    </div>
+                    <div class="itinerary-progress">
+                      <div class="progress-text">
+                        Trip preparations: 70% complete
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-filled" style="width: 70%"></div>
+                      </div>
+                    </div>
+                    <div class="itinerary-buttons">
+                      <button class="view-button">View Details</button>
+                      <button class="share-button">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Itinerary Card 2 -->
+                <div class="itinerary-card">
+                  <div class="itinerary-header">
+                    <div class="itinerary-badge past">Past</div>
+                    <div class="itinerary-actions">
+                      <button class="action-btn" title="Edit">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button
+                        class="action-btn favorite active"
+                        title="Unfavorite"
+                      >
+                        <i class="fas fa-heart"></i>
+                      </button>
+                      <button class="action-btn" title="Delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="itinerary-image">
+                    <img src="./images/nepal-village.jpg" alt="Phewa Lake" />
+                    <div class="image-tag">Pokhara</div>
+                  </div>
+                  <div class="itinerary-content">
+                    <h3>Pokhara Weekend Getaway</h3>
+                    <div class="itinerary-dates">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span>April 15 - April 17, 2025</span>
+                    </div>
+                    <div class="itinerary-destinations">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Pokhara City → Phewa Lake → Peace Pagoda</span>
+                    </div>
+                    <div class="itinerary-stats">
+                      <div class="stat">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>3 days</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>5 locations</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-camera"></i>
+                        <span>46 photos</span>
+                      </div>
+                    </div>
+                    <div class="itinerary-buttons">
+                      <button class="view-button">View Details</button>
+                      <button class="share-button">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Itinerary Card 3 -->
+                <div class="itinerary-card">
+                  <div class="itinerary-header">
+                    <div class="itinerary-badge upcoming">Upcoming</div>
+                    <div class="itinerary-actions">
+                      <button class="action-btn" title="Edit">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn favorite" title="Favorite">
+                        <i class="fas fa-heart"></i>
+                      </button>
+                      <button class="action-btn" title="Delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="itinerary-image">
+                    <img
+                      src="./images/nepal-village.jpg"
+                      alt="Kathmandu Durbar Square"
+                    />
+                    <div class="image-tag">Kathmandu</div>
+                  </div>
+                  <div class="itinerary-content">
+                    <h3>Kathmandu Cultural Tour</h3>
+                    <div class="itinerary-dates">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span>June 5 - June 8, 2025</span>
+                    </div>
+                    <div class="itinerary-destinations">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Durbar Square → Pashupatinath → Boudhanath</span>
+                    </div>
+                    <div class="itinerary-stats">
+                      <div class="stat">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>4 days</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-landmark"></i>
+                        <span>7 temples</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-utensils"></i>
+                        <span>Food tour</span>
+                      </div>
+                    </div>
+                    <div class="itinerary-progress">
+                      <div class="progress-text">
+                        Trip preparations: 30% complete
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-filled" style="width: 30%"></div>
+                      </div>
+                    </div>
+                    <div class="itinerary-buttons">
+                      <button class="view-button">View Details</button>
+                      <button class="share-button">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Empty State (when no itineraries are found based on filter) -->
+                <div class="empty-state" style="display: none">
+                  <div class="empty-icon">
+                    <i class="fas fa-route"></i>
+                  </div>
+                  <h3>No Itineraries Found</h3>
+                  <p>
+                    Your filtered search didn't match any saved itineraries.
+                  </p>
+                  <button class="create-button">
+                    <i class="fas fa-plus"></i> Create New Itinerary
+                  </button>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="pagination">
+                <button class="pagination-button" disabled>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="pagination-button active">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Reviews -->
+            <div id="reviews" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-comment"></i> My Reviews
+              </h2>
+
+              <div class="reviews-container">
+                <div class="review-filters">
+                  <div class="filters-row">
+                    <div class="search-box">
+                      <i class="fas fa-search"></i>
+                      <input type="text" placeholder="Search reviews..." />
+                    </div>
+                    <div class="filter-controls">
+                      <select class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="hotels">Hotels</option>
+                        <option value="restaurants">Restaurants</option>
+                        <option value="attractions">Attractions</option>
+                        <option value="tours">Tours</option>
+                      </select>
+                      <select class="filter-select">
+                        <option value="recent">Most Recent</option>
+                        <option value="rating-high">Highest Rated</option>
+                        <option value="rating-low">Lowest Rated</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="active-filters">
+                    <div class="filter-tag">
+                      <span>Last 6 Months</span>
+                      <i class="fas fa-times"></i>
+                    </div>
+                    <div class="filter-tag">
+                      <span>Rating: 4+</span>
+                      <i class="fas fa-times"></i>
+                    </div>
+                    <div class="clear-filters">Clear All</div>
+                  </div>
+                </div>
+
+                <div class="reviews-list">
+                  <!-- Hotel Review -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <div class="review-image">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Hotel Himalaya"
+                        />
+                        <div class="review-category hotel">Hotel</div>
+                      </div>
+                      <div class="review-info">
+                        <h3 class="review-title">Hotel Himalaya</h3>
+                        <div class="review-location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>Kathmandu, Nepal</span>
+                        </div>
+                        <div class="review-date">
+                          Reviewed on April 15, 2025
+                        </div>
+                        <div class="review-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <span class="rating-score">4.0</span>
+                        </div>
+                      </div>
+                      <div class="review-actions">
+                        <button class="action-btn edit">
+                          <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="action-btn delete">
+                          <i class="fas fa-trash-alt"></i> Delete
+                        </button>
+                      </div>
+                    </div>
+                    <div class="review-content">
+                      <p>
+                        The Hotel Himalaya offered breathtaking views of the
+                        Kathmandu Valley and surrounding mountain range. The
+                        staff was incredibly attentive and the room was
+                        comfortable and clean. The only downside was the
+                        occasional power outage, but they have backup generators
+                        that kick in quickly. The restaurant serves authentic
+                        Nepalese cuisine that's worth trying. Overall, a great
+                        base for exploring the city!
+                      </p>
+                    </div>
+                    <div class="review-photos">
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Hotel Room"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Hotel View"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Hotel Restaurant"
+                        />
+                      </div>
+                      <div class="photo-count">+2</div>
+                    </div>
+                    <div class="review-stats">
+                      <div class="stat">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>24 people found this helpful</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-comment"></i>
+                        <span>3 comments</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Restaurant Review -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <div class="review-image">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Aegean Taverna"
+                        />
+                        <div class="review-category restaurant">Restaurant</div>
+                      </div>
+                      <div class="review-info">
+                        <h3 class="review-title">Aegean Taverna</h3>
+                        <div class="review-location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>Santorini, Greece</span>
+                        </div>
+                        <div class="review-date">
+                          Reviewed on March 22, 2025
+                        </div>
+                        <div class="review-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-score">5.0</span>
+                        </div>
+                      </div>
+                      <div class="review-actions">
+                        <button class="action-btn edit">
+                          <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="action-btn delete">
+                          <i class="fas fa-trash-alt"></i> Delete
+                        </button>
+                      </div>
+                    </div>
+                    <div class="review-content">
+                      <p>
+                        This cliffside restaurant offered one of the best dining
+                        experiences of my life! The fresh seafood was caught
+                        that morning, and the Greek salad with local tomatoes
+                        and feta was incredible. We arrived just before sunset
+                        and watched the sky turn beautiful shades of orange and
+                        pink over the caldera. The service was impeccable - our
+                        server Nikos recommended the perfect local wine pairing.
+                        This place is pricey but absolutely worth it for a
+                        special occasion.
+                      </p>
+                    </div>
+                    <div class="review-photos">
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Restaurant View"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Greek Salad"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Seafood Platter"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Sunset View"
+                        />
+                      </div>
+                    </div>
+                    <div class="review-stats">
+                      <div class="stat">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>47 people found this helpful</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-comment"></i>
+                        <span>8 comments</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Attraction Review -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <div class="review-image">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Machu Picchu"
+                        />
+                        <div class="review-category attraction">Attraction</div>
+                      </div>
+                      <div class="review-info">
+                        <h3 class="review-title">Machu Picchu</h3>
+                        <div class="review-location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>Cusco Region, Peru</span>
+                        </div>
+                        <div class="review-date">
+                          Reviewed on February 10, 2025
+                        </div>
+                        <div class="review-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <span class="rating-score">4.5</span>
+                        </div>
+                      </div>
+                      <div class="review-actions">
+                        <button class="action-btn edit">
+                          <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="action-btn delete">
+                          <i class="fas fa-trash-alt"></i> Delete
+                        </button>
+                      </div>
+                    </div>
+                    <div class="review-content">
+                      <p>
+                        Visiting Machu Picchu was a bucket list experience that
+                        exceeded all expectations. I took the 4-day Inca Trail
+                        hike to reach the site, which was challenging but
+                        rewarding. Arriving at the Sun Gate at dawn and seeing
+                        the ancient city emerge from the morning mist was
+                        absolutely magical. Our guide, Carlos, was extremely
+                        knowledgeable about Incan history and architecture. My
+                        advice: book well in advance (permits sell out months
+                        ahead), prepare for all weather conditions, and spend at
+                        least 4-5 hours exploring the site.
+                      </p>
+                    </div>
+                    <div class="review-photos">
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Machu Picchu Overview"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Inca Trail"
+                        />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Sunrise View"
+                        />
+                      </div>
+                      <div class="photo-count">+5</div>
+                    </div>
+                    <div class="review-stats">
+                      <div class="stat">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>86 people found this helpful</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-comment"></i>
+                        <span>12 comments</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tour Review -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <div class="review-image">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Safari Tour"
+                        />
+                        <div class="review-category tour">Tour</div>
+                      </div>
+                      <div class="review-info">
+                        <h3 class="review-title">Serengeti Discovery Safari</h3>
+                        <div class="review-location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>Serengeti National Park, Tanzania</span>
+                        </div>
+                        <div class="review-date">
+                          Reviewed on January 5, 2025
+                        </div>
+                        <div class="review-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-score">5.0</span>
+                        </div>
+                      </div>
+                      <div class="review-actions">
+                        <button class="action-btn edit">
+                          <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="action-btn delete">
+                          <i class="fas fa-trash-alt"></i> Delete
+                        </button>
+                      </div>
+                    </div>
+                    <div class="review-content">
+                      <p>
+                        This 7-day safari experience was worth every penny. Our
+                        guide Joseph had incredible wildlife tracking skills -
+                        we managed to see the Big Five within the first three
+                        days! The luxury tented camp was comfortable yet
+                        authentic, with amazing food and service. Watching the
+                        wildebeest migration cross the Mara River was an
+                        unforgettable spectacle of nature. The night drives
+                        offered a chance to see nocturnal animals like aardvarks
+                        and bush babies. I highly recommend adding the hot air
+                        balloon ride over the plains at sunrise - expensive but
+                        truly a once-in-a-lifetime experience.
+                      </p>
+                    </div>
+                    <div class="review-photos">
+                      <div class="photo-item">
+                        <img src="./images/nepal-village.jpg" alt="Lions" />
+                      </div>
+                      <div class="photo-item">
+                        <img src="./images/nepal-village.jpg" alt="Elephants" />
+                      </div>
+                      <div class="photo-item">
+                        <img
+                          src="./images/nepal-village.jpg"
+                          alt="Luxury Camp"
+                        />
+                      </div>
+                      <div class="photo-count">+7</div>
+                    </div>
+                    <div class="review-stats">
+                      <div class="stat">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>53 people found this helpful</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-comment"></i>
+                        <span>6 comments</span>
+                      </div>
+                      <div class="stat">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pagination -->
+                  <div class="pagination">
+                    <div class="page-info">Showing 4 of 95 reviews</div>
+                    <div class="page-controls">
+                      <button class="page-btn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button class="page-btn active">1</button>
+                      <button class="page-btn">2</button>
+                      <button class="page-btn">3</button>
+                      <span class="page-ellipsis">...</span>
+                      <button class="page-btn">24</button>
+                      <button class="page-btn">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- My Posts -->
+            <div id="posts" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-camera-retro"></i> My Posts
+              </h2>
+
+              <div class="posts-actions">
+                <button class="button">
+                  <i class="fas fa-plus"></i> Create New Post
+                </button>
+                <div class="posts-filter">
+                  <select id="postFilter">
+                    <option value="all">All Posts</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="recent">Most Recent</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="posts-grid">
+                <!-- Post 1 -->
+                <div class="post-card">
+                  <div class="post-images">
+                    <div class="post-image-main">
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Santorini, Greece"
+                      />
+                      <div class="post-location">
+                        <i class="fas fa-map-marker-alt"></i> Santorini, Greece
+                      </div>
+                    </div>
+                    <div class="post-image-thumbnails">
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Santorini beach"
+                      />
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Santorini sunset"
+                      />
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Santorini restaurant"
+                      />
+                      <span class="more-photos">+2</span>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <div class="post-header">
+                      <h3>Magical Days in Santorini</h3>
+                      <span class="post-date">April 20, 2025</span>
+                    </div>
+                    <p class="post-excerpt">
+                      Spent a week in this paradise with its stunning white
+                      buildings and breathtaking ocean views. The sunsets were
+                      absolutely incredible...
+                    </p>
+                    <div class="post-meta">
+                      <div class="post-stats">
+                        <span><i class="fas fa-heart"></i> 127</span>
+                        <span><i class="fas fa-comment"></i> 32</span>
+                        <span><i class="fas fa-share-alt"></i> 14</span>
+                      </div>
+                      <div class="post-actions">
+                        <button class="button secondary small">Edit</button>
+                        <button class="button tertiary small">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post-card">
+                  <div class="post-images">
+                    <div class="post-image-main">
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Pokhara, Nepal"
+                      />
+                      <div class="post-location">
+                        <i class="fas fa-map-marker-alt"></i> Pokhara, Nepal
+                      </div>
+                    </div>
+                    <div class="post-image-thumbnails">
+                      <img src="./images/nepal-village.jpg" alt="Phewa Lake" />
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Annapurna Range"
+                      />
+                      <img src="./images/nepal-village.jpg" alt="Paragliding" />
+                      <span class="more-photos">+4</span>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <div class="post-header">
+                      <h3>Himalayan Adventure in Pokhara</h3>
+                      <span class="post-date">March 15, 2025</span>
+                    </div>
+                    <p class="post-excerpt">
+                      Completed a challenging trek to Annapurna Base Camp with
+                      breathtaking mountain views. Also tried paragliding over
+                      Phewa Lake...
+                    </p>
+                    <div class="post-meta">
+                      <div class="post-stats">
+                        <span><i class="fas fa-heart"></i> 214</span>
+                        <span><i class="fas fa-comment"></i> 47</span>
+                        <span><i class="fas fa-share-alt"></i> 28</span>
+                      </div>
+                      <div class="post-actions">
+                        <button class="button secondary small">Edit</button>
+                        <button class="button tertiary small">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="post-card">
+                  <div class="post-images">
+                    <div class="post-image-main">
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Kyoto, Japan"
+                      />
+                      <div class="post-location">
+                        <i class="fas fa-map-marker-alt"></i> Kyoto, Japan
+                      </div>
+                    </div>
+                    <div class="post-image-thumbnails">
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Fushimi Inari Shrine"
+                      />
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Arashiyama Bamboo Forest"
+                      />
+                      <img
+                        src="./images/nepal-village.jpg"
+                        alt="Kinkaku-ji Temple"
+                      />
+                      <span class="more-photos">+3</span>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <div class="post-header">
+                      <h3>Cultural Immersion in Kyoto</h3>
+                      <span class="post-date">January 25, 2025</span>
+                    </div>
+                    <p class="post-excerpt">
+                      Exploring ancient temples, participating in a traditional
+                      tea ceremony, and walking through the mesmerizing bamboo
+                      forest...
+                    </p>
+                    <div class="post-meta">
+                      <div class="post-stats">
+                        <span><i class="fas fa-heart"></i> 176</span>
+                        <span><i class="fas fa-comment"></i> 39</span>
+                        <span><i class="fas fa-share-alt"></i> 21</span>
+                      </div>
+                      <div class="post-actions">
+                        <button class="button secondary small">Edit</button>
+                        <button class="button tertiary small">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="post-card draft">
+                  <div class="post-images">
+                    <div class="post-image-main post-draft">
+                      <img src="./images/nepal-village.jpg" alt="Draft post" />
+                      <div class="draft-label">DRAFT</div>
+                      <div class="post-location">
+                        <i class="fas fa-map-marker-alt"></i> Rome, Italy
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <div class="post-header">
+                      <h3>Rome Weekend Getaway</h3>
+                      <span class="post-date">Started April 28, 2025</span>
+                    </div>
+                    <p class="post-excerpt">
+                      A quick weekend trip exploring the ancient ruins and
+                      enjoying authentic Italian cuisine...
+                    </p>
+                    <div class="post-meta">
+                      <div class="post-stats">
+                        <span class="draft-status">Incomplete draft</span>
+                      </div>
+                      <div class="post-actions">
+                        <button class="button primary small">
+                          Continue Editing
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagination">
+                <button class="pagination-button active">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <span class="pagination-ellipsis">...</span>
+                <button class="pagination-button">7</button>
+                <button class="pagination-button next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Account Settings -->
+            <div id="settings" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-cog"></i> Account Settings
+              </h2>
+
+              <div class="info-block">
+                <h3>Security</h3>
+                <div class="info-form">
+                  <div class="form-group full-width">
+                    <label for="current-password">Current Password</label>
+                    <input
+                      type="password"
+                      id="current-password"
+                      placeholder="Enter your current password"
+                    />
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="new-password">New Password</label>
+                      <input
+                        type="password"
+                        id="new-password"
+                        placeholder="Enter new password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="confirm-password">Confirm New Password</label>
+                      <input
+                        type="password"
+                        id="confirm-password"
+                        placeholder="Confirm new password"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="password-strength">
+                    <div class="strength-label">Password Strength</div>
+                    <div class="strength-meter">
+                      <div class="strength-bar" style="width: 70%"></div>
+                    </div>
+                    <div class="strength-text">Strong</div>
+                  </div>
+
+                  <div class="password-tips">
+                    <p>
+                      <i class="fas fa-info-circle"></i> Your password should be
+                      at least 8 characters and include uppercase letters,
+                      numbers, and special characters.
+                    </p>
+                  </div>
+
+                  <div class="form-actions">
+                    <button class="button">Update Password</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Account Verification</h3>
+                <div class="info-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>Email Verification</label>
+                      <div class="verification-status verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Phone Verification</label>
+                      <div class="verification-status not-verified">
+                        <i class="fas fa-times-circle"></i> Not Verified
+                        <button class="button secondary small">
+                          Verify Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Two-Factor Authentication</h3>
+                <div class="info-form">
+                  <div class="toggle-control">
+                    <div class="toggle-info">
+                      <div class="toggle-title">
+                        Enable Two-Factor Authentication
+                      </div>
+                      <div class="toggle-description">
+                        Add an extra layer of security to your account by
+                        requiring a verification code in addition to your
+                        password when signing in.
+                      </div>
+                    </div>
+                    <div class="toggle-switch">
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <button class="button secondary setup-2fa" disabled>
+                      <i class="fas fa-shield-alt"></i> Set Up Two-Factor
+                      Authentication
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Session Management</h3>
+                <div class="info-form">
+                  <div class="session-list">
+                    <div class="session-item current">
+                      <div class="session-info">
+                        <div class="device-info">
+                          <i class="fas fa-laptop"></i>
+                          <div class="device-details">
+                            <div class="device-name">
+                              MacBook Pro (Current Device)
+                            </div>
+                            <div class="location">San Francisco, CA, USA</div>
+                          </div>
+                        </div>
+                        <div class="session-time">
+                          <div class="login-time">Active now</div>
+                          <div class="browser">Chrome 120.0.6099</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="session-item">
+                      <div class="session-info">
+                        <div class="device-info">
+                          <i class="fas fa-mobile-alt"></i>
+                          <div class="device-details">
+                            <div class="device-name">iPhone 15</div>
+                            <div class="location">San Francisco, CA, USA</div>
+                          </div>
+                        </div>
+                        <div class="session-time">
+                          <div class="login-time">Last active: 2 hours ago</div>
+                          <div class="browser">Safari Mobile</div>
+                        </div>
+                      </div>
+                      <div class="session-actions">
+                        <button class="button danger small">
+                          <i class="fas fa-sign-out-alt"></i> Log Out
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="session-item">
+                      <div class="session-info">
+                        <div class="device-info">
+                          <i class="fas fa-tablet-alt"></i>
+                          <div class="device-details">
+                            <div class="device-name">iPad</div>
+                            <div class="location">Los Angeles, CA, USA</div>
+                          </div>
+                        </div>
+                        <div class="session-time">
+                          <div class="login-time">Last active: 3 days ago</div>
+                          <div class="browser">Safari 16.2</div>
+                        </div>
+                      </div>
+                      <div class="session-actions">
+                        <button class="button danger small">
+                          <i class="fas fa-sign-out-alt"></i> Log Out
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-actions">
+                    <button class="button danger">
+                      <i class="fas fa-power-off"></i> Log Out of All Other
+                      Devices
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Privacy Settings</h3>
+                <div class="info-form">
+                  <div class="toggle-control">
+                    <div class="toggle-info">
+                      <div class="toggle-title">Profile Visibility</div>
+                      <div class="toggle-description">
+                        Make your profile visible to other TravelBuddy users
+                      </div>
+                    </div>
+                    <div class="toggle-switch">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="toggle-control">
+                    <div class="toggle-info">
+                      <div class="toggle-title">Show Travel History</div>
+                      <div class="toggle-description">
+                        Allow others to see your past trips and destinations
+                      </div>
+                    </div>
+                    <div class="toggle-switch">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="toggle-control">
+                    <div class="toggle-info">
+                      <div class="toggle-title">Location Sharing</div>
+                      <div class="toggle-description">
+                        Share your current location with friends during trips
+                      </div>
+                    </div>
+                    <div class="toggle-switch">
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="toggle-control">
+                    <div class="toggle-info">
+                      <div class="toggle-title">Activity Status</div>
+                      <div class="toggle-description">
+                        Show when you're active on TravelBuddy
+                      </div>
+                    </div>
+                    <div class="toggle-switch">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Linked Accounts</h3>
+                <div class="info-form">
+                  <div class="linked-account">
+                    <div class="account-logo">
+                      <i class="fab fa-google"></i>
+                    </div>
+                    <div class="account-info">
+                      <div class="account-name">Google</div>
+                      <div class="account-status connected">
+                        Connected as alex.johnson@gmail.com
+                      </div>
+                    </div>
+                    <button class="button secondary small">Disconnect</button>
+                  </div>
+
+                  <div class="linked-account">
+                    <div class="account-logo">
+                      <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="account-info">
+                      <div class="account-name">Facebook</div>
+                      <div class="account-status">Not connected</div>
+                    </div>
+                    <button class="button small">Connect</button>
+                  </div>
+
+                  <div class="linked-account">
+                    <div class="account-logo">
+                      <i class="fab fa-apple"></i>
+                    </div>
+                    <div class="account-info">
+                      <div class="account-name">Apple</div>
+                      <div class="account-status connected">
+                        Connected as alex********@icloud.com
+                      </div>
+                    </div>
+                    <button class="button secondary small">Disconnect</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block danger-zone">
+                <h3>Account Actions</h3>
+                <div class="info-form">
+                  <div class="account-action">
+                    <div class="action-info">
+                      <div class="action-title">Deactivate Account</div>
+                      <div class="action-description">
+                        Temporarily disable your account. You can reactivate it
+                        at any time.
+                      </div>
+                    </div>
+                    <button class="button warning">Deactivate</button>
+                  </div>
+
+                  <div class="account-action">
+                    <div class="action-info">
+                      <div class="action-title">Delete Account</div>
+                      <div class="action-description">
+                        Permanently delete your account and all associated data.
+                        This action cannot be undone.
+                      </div>
+                    </div>
+                    <button class="button danger">Delete</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions final">
+                <button class="button secondary">Cancel Changes</button>
+                <button class="button">Save All Changes</button>
+              </div>
+            </div>
+
+            <!-- Email Settings -->
+            <div id="newsletter" class="tab-pane">
+              <h2 class="section-title">
+                <i class="fas fa-envelope"></i> Email Preferences
+              </h2>
+
+              <div class="info-block">
+                <h3>Manage Your Subscriptions</h3>
+                <p class="subscription-intro">
+                  Choose what types of emails you'd like to receive from
+                  TravelBuddy. You can opt out of any category at any time.
+                </p>
+
+                <div class="subscription-categories">
+                  <div class="subscription-item">
+                    <div class="subscription-header">
+                      <div class="subscription-title">
+                        <i class="fas fa-percent"></i>
+                        <h4>Deals & Promotions</h4>
+                      </div>
+                      <label class="toggle-switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <p class="subscription-description">
+                      Special offers, discounts, and limited-time deals curated
+                      for your travel interests.
+                    </p>
+                    <div class="frequency-selector">
+                      <span>Frequency:</span>
+                      <div class="radio-group">
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="deals-frequency"
+                            value="daily"
+                          />
+                          <span class="radio-text">Daily</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="deals-frequency"
+                            value="weekly"
+                            checked
+                          />
+                          <span class="radio-text">Weekly</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="deals-frequency"
+                            value="monthly"
+                          />
+                          <span class="radio-text">Monthly</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="subscription-item">
+                    <div class="subscription-header">
+                      <div class="subscription-title">
+                        <i class="fas fa-compass"></i>
+                        <h4>Destination Inspiration</h4>
+                      </div>
+                      <label class="toggle-switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <p class="subscription-description">
+                      Discover new destinations, seasonal travel ideas, and
+                      trending locations.
+                    </p>
+                    <div class="frequency-selector">
+                      <span>Frequency:</span>
+                      <div class="radio-group">
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="inspiration-frequency"
+                            value="weekly"
+                          />
+                          <span class="radio-text">Weekly</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="inspiration-frequency"
+                            value="biweekly"
+                            checked
+                          />
+                          <span class="radio-text">Biweekly</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="inspiration-frequency"
+                            value="monthly"
+                          />
+                          <span class="radio-text">Monthly</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="subscription-item">
+                    <div class="subscription-header">
+                      <div class="subscription-title">
+                        <i class="fas fa-bell"></i>
+                        <h4>Trip Updates & Reminders</h4>
+                      </div>
+                      <label class="toggle-switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <p class="subscription-description">
+                      Important information about your upcoming trips, booking
+                      confirmations, and travel reminders.
+                    </p>
+                    <div class="alert-message">
+                      <i class="fas fa-info-circle"></i>
+                      <p>
+                        These are essential emails related to your bookings and
+                        cannot be disabled entirely.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="subscription-item">
+                    <div class="subscription-header">
+                      <div class="subscription-title">
+                        <i class="fas fa-users"></i>
+                        <h4>Community Updates</h4>
+                      </div>
+                      <label class="toggle-switch">
+                        <input type="checkbox" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <p class="subscription-description">
+                      Updates from travelers you follow, community events, and
+                      forum activity.
+                    </p>
+                    <div class="frequency-selector">
+                      <span>Frequency:</span>
+                      <div class="radio-group">
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="community-frequency"
+                            value="daily"
+                          />
+                          <span class="radio-text">Daily</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="community-frequency"
+                            value="weekly"
+                            checked
+                          />
+                          <span class="radio-text">Weekly</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="community-frequency"
+                            value="none"
+                          />
+                          <span class="radio-text">None</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="subscription-item">
+                    <div class="subscription-header">
+                      <div class="subscription-title">
+                        <i class="fas fa-newspaper"></i>
+                        <h4>Travel Tips & Articles</h4>
+                      </div>
+                      <label class="toggle-switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <p class="subscription-description">
+                      Expert travel advice, guides, and articles tailored to
+                      your interests.
+                    </p>
+                    <div class="frequency-selector">
+                      <span>Frequency:</span>
+                      <div class="radio-group">
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="tips-frequency"
+                            value="weekly"
+                          />
+                          <span class="radio-text">Weekly</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="tips-frequency"
+                            value="biweekly"
+                            checked
+                          />
+                          <span class="radio-text">Biweekly</span>
+                        </label>
+                        <label class="radio-option">
+                          <input
+                            type="radio"
+                            name="tips-frequency"
+                            value="monthly"
+                          />
+                          <span class="radio-text">Monthly</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Email Format Preferences</h3>
+                <div class="format-preferences">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="email-format">Email Format</label>
+                      <select id="email-format">
+                        <option value="html" selected>HTML (Rich Text)</option>
+                        <option value="text">Plain Text</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="image-loading">Image Loading</label>
+                      <select id="image-loading">
+                        <option value="always" selected>
+                          Always Load Images
+                        </option>
+                        <option value="wifi">Only on WiFi</option>
+                        <option value="never">Never Load Images</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Notification Delivery</h3>
+                <div class="notification-settings">
+                  <div class="form-group full-width">
+                    <label>Notification Preferences</label>
+                    <div class="notification-options">
+                      <div class="notification-option">
+                        <label class="checkbox-container">
+                          <input type="checkbox" checked />
+                          <span class="checkmark"></span>
+                          <div class="option-text">
+                            <span>Email</span>
+                            <p>Receive all notifications via email</p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="notification-option">
+                        <label class="checkbox-container">
+                          <input type="checkbox" checked />
+                          <span class="checkmark"></span>
+                          <div class="option-text">
+                            <span>Push Notifications</span>
+                            <p>Receive notifications in your browser</p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="notification-option">
+                        <label class="checkbox-container">
+                          <input type="checkbox" checked />
+                          <span class="checkmark"></span>
+                          <div class="option-text">
+                            <span>SMS</span>
+                            <p>
+                              Receive text message alerts for important updates
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Email Address Management</h3>
+                <div class="email-management">
+                  <div class="current-email">
+                    <h4>Primary Email</h4>
+                    <div class="email-display">
+                      <span>alex.johnson@email.com</span>
+                      <div class="email-status">
+                        Verified <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="secondary-emails">
+                    <h4>Secondary Emails</h4>
+                    <div class="email-list">
+                      <div class="email-item">
+                        <div class="email-info">
+                          <span>alex.work@company.com</span>
+                          <div class="email-status">
+                            Verified <i class="fas fa-check-circle"></i>
+                          </div>
+                        </div>
+                        <div class="email-actions">
+                          <button class="button-icon" title="Make Primary">
+                            <i class="fas fa-star"></i>
+                          </button>
+                          <button class="button-icon" title="Remove Email">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-email">
+                        <input
+                          type="email"
+                          placeholder="Add another email address"
+                        />
+                        <button class="button secondary">Add Email</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h3>Unsubscribe Options</h3>
+                <div class="unsubscribe-options">
+                  <div class="unsubscribe-option">
+                    <label class="radio-container">
+                      <input type="radio" name="unsubscribe" value="pause" />
+                      <span class="radio-mark"></span>
+                      <div class="option-text">
+                        <span>Pause all emails for 30 days</span>
+                        <p>
+                          Take a break from emails but don't unsubscribe
+                          completely
+                        </p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="unsubscribe-option">
+                    <label class="radio-container">
+                      <input
+                        type="radio"
+                        name="unsubscribe"
+                        value="essential"
+                      />
+                      <span class="radio-mark"></span>
+                      <div class="option-text">
+                        <span>Receive only essential emails</span>
+                        <p>
+                          Only get emails related to your bookings and account
+                        </p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="unsubscribe-option warning">
+                    <label class="radio-container">
+                      <input type="radio" name="unsubscribe" value="all" />
+                      <span class="radio-mark"></span>
+                      <div class="option-text">
+                        <span>Unsubscribe from all marketing emails</span>
+                        <p>
+                          You'll still receive transactional emails related to
+                          your bookings
+                        </p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="button secondary">Cancel Changes</button>
+                <button class="button">Save Preferences</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <i class="fas fa-globe-americas"></i> TravelBuddy
+          </div>
+          <p>
+            Your trusted companion for authentic travel experiences around the
+            world.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to receive travel tips and exclusive offers</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="button">Subscribe</button>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TravelBuddy. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Tab navigation functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabLinks = document.querySelectorAll(".tab-link");
+        const tabPanes = document.querySelectorAll(".tab-pane");
+
+        tabLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            // Remove active class from all tabs
+            tabLinks.forEach((item) => item.classList.remove("active"));
+            tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+            // Add active class to current tab
+            this.classList.add("active");
+
+            // Show the corresponding tab content
+            const tabId = this.getAttribute("data-tab");
+            document.getElementById(tabId).classList.add("active");
+          });
+        });
+      });
+
+      // Trip data - in a real app, this would come from an API or database
+      const tripData = {
+        pokhara: {
+          name: "Pokhara Valley",
+          status: "Current Trip",
+          location: "Pokhara, Nepal",
+          dates: "May 1 - May 8, 2025",
+          duration: "7 days",
+          image: "./images/nepal-village.jpg",
+          weather: {
+            current: "23°C, Partly Cloudy",
+            forecast: [
+              { day: "Today", icon: "cloud-sun", temp: "23°C" },
+              { day: "Tomorrow", icon: "cloud", temp: "22°C" },
+              { day: "Day 3", icon: "cloud-rain", temp: "21°C" },
+              { day: "Day 4", icon: "sun", temp: "24°C" },
+              { day: "Day 5", icon: "cloud-sun", temp: "23°C" },
+            ],
+          },
+          coordinates: { lat: 28.2096, lng: 83.9856 },
+          attractions: [
+            { name: "Phewa Lake", image: "./images/phewa-lake.webp" },
+            {
+              name: "World Peace Pagoda",
+              image: "./images/World Peace Pagoda.jpg",
+            },
+            { name: "Davis Falls", image: "./images/davis falls.jpeg" },
+            { name: "Mahendra Cave", image: "./images/mahendra-cave.avif" },
+          ],
+        },
+        kathmandu: {
+          name: "Kathmandu",
+          status: "Upcoming Trip",
+          location: "Kathmandu, Nepal",
+          dates: "May 9 - May 15, 2025",
+          duration: "6 days",
+          image: "./images/nepal-village.jpg",
+          weather: {
+            current: "26°C, Cloudy",
+            forecast: [
+              { day: "May 9", icon: "cloud", temp: "26°C" },
+              { day: "May 10", icon: "cloud-rain", temp: "25°C" },
+              { day: "May 11", icon: "cloud-rain", temp: "24°C" },
+              { day: "May 12", icon: "cloud", temp: "26°C" },
+              { day: "May 13", icon: "cloud-sun", temp: "27°C" },
+            ],
+          },
+          coordinates: { lat: 27.7172, lng: 85.324 },
+          attractions: [
+            { name: "Durbar Square", image: "./images/nepal-village.jpg" },
+            { name: "Swayambhunath", image: "./images/nepal-village.jpg" },
+            { name: "Boudhanath Stupa", image: "./images/nepal-village.jpg" },
+            {
+              name: "Pashupatinath Temple",
+              image: "./images/nepal-village.jpg",
+            },
+          ],
+        },
+        chitwan: {
+          name: "Chitwan National Park",
+          status: "Past Trip",
+          location: "Chitwan, Nepal",
+          dates: "Apr 22 - Apr 30, 2025",
+          duration: "8 days",
+          image: "./images/nepal-village.jpg",
+          weather: {
+            current: "30°C, Sunny",
+            forecast: [
+              { day: "Apr 22", icon: "sun", temp: "30°C" },
+              { day: "Apr 23", icon: "sun", temp: "31°C" },
+              { day: "Apr 24", icon: "cloud-sun", temp: "30°C" },
+              { day: "Apr 25", icon: "cloud", temp: "29°C" },
+              { day: "Apr 26", icon: "sun", temp: "30°C" },
+            ],
+          },
+          coordinates: { lat: 27.5291, lng: 84.3542 },
+          attractions: [
+            { name: "Elephant Safari", image: "../images/nepal-village.jpg" },
+            { name: "Canoe Ride", image: "./images/nepal-village.jpg" },
+            { name: "Bird Watching", image: "./images/nepal-village.jpg" },
+            { name: "Tharu Village", image: "./images/nepal-village.jpg" },
+          ],
+        },
+        annapurna: {
+          name: "Annapurna Circuit",
+          status: "Past Trip",
+          location: "Annapurna, Nepal",
+          dates: "Apr 10 - Apr 20, 2025",
+          duration: "10 days",
+          image: "./images/nepal-village.jpg",
+          weather: {
+            current: "18°C, Windy",
+            forecast: [
+              { day: "Apr 10", icon: "wind", temp: "18°C" },
+              { day: "Apr 11", icon: "cloud-sun", temp: "17°C" },
+              { day: "Apr 12", icon: "sun", temp: "19°C" },
+              { day: "Apr 13", icon: "wind", temp: "16°C" },
+              { day: "Apr 14", icon: "cloud", temp: "15°C" },
+            ],
+          },
+          coordinates: { lat: 28.297, lng: 83.836 },
+          attractions: [
+            { name: "Thorong La Pass", image: "./images/nepal-village.jpg" },
+            { name: "Tilicho Lake", image: "./images/nepal-village.jpg" },
+            { name: "Manang Village", image: "./images/nepal-village.jpg" },
+            { name: "Poon Hill", image: "./images/nepal-village.jpg" },
+          ],
+        },
+      };
+
+      // Note: The image paths are placeholders. In a real application, you would have these images in your project.
+
+      // Initialize when the document is ready
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("tripDetailsModal");
+        const closeModal = document.querySelector(".close-modal");
+        const tripCards = document.querySelectorAll(".trip-card");
+
+        // Close modal when clicking the X
+        closeModal.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside of it
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+
+        // Add click event to all trip cards
+        tripCards.forEach((card) => {
+          card.addEventListener("click", function () {
+            const tripId = this.getAttribute("data-trip");
+            openTripModal(tripId);
+          });
+
+          // Also add click event to the view details button
+          const viewDetailsBtn = card.querySelector(".view-details-btn");
+          viewDetailsBtn.addEventListener("click", function (e) {
+            e.stopPropagation(); // Prevent triggering the card click
+            const tripId = card.getAttribute("data-trip");
+            openTripModal(tripId);
+          });
+        });
+
+        // Function to open modal with trip details
+        function openTripModal(tripId) {
+          const trip = tripData[tripId];
+          if (!trip) return;
+
+          // Fill modal with trip data
+          document.getElementById("modalTripName").textContent = trip.name;
+          document.getElementById("modalTripStatus").textContent = trip.status;
+          document.getElementById("modalTripImage").src = trip.image;
+          document.getElementById("modalTripImage").alt = trip.name;
+          document.getElementById("modalLocation").textContent = trip.location;
+          document.getElementById("modalDates").textContent = trip.dates;
+          document.getElementById("modalDuration").textContent = trip.duration;
+
+          // Update weather forecast
+          const forecastElements = document.querySelectorAll(".forecast-day");
+          trip.weather.forecast.forEach((forecast, index) => {
+            if (forecastElements[index]) {
+              forecastElements[index].querySelector(".day").textContent =
+                forecast.day;
+              forecastElements[index].querySelector(
+                ".icon"
+              ).innerHTML = `<i class="fas fa-${forecast.icon}"></i>`;
+              forecastElements[index].querySelector(".temp").textContent =
+                forecast.temp;
+            }
+          });
+
+          // Update attractions
+          const attractionsGrid = document.querySelector(
+            ".modal-attractions-grid"
+          );
+          attractionsGrid.innerHTML = "";
+
+          trip.attractions.forEach((attraction) => {
+            const attractionEl = document.createElement("div");
+            attractionEl.className = "modal-attraction";
+            attractionEl.innerHTML = `
+        <img src="${attraction.image}" alt="${attraction.name}">
+        <div class="attraction-name">${attraction.name}</div>
+      `;
+            attractionsGrid.appendChild(attractionEl);
+          });
+
+          // Initialize the map
+          initModalMap(trip.coordinates);
+
+          // Show the modal
+          modal.style.display = "block";
+        }
+
+        // Function to initialize the map in the modal
+        function initModalMap(coordinates) {
+          // Check if Google Maps API is loaded
+          if (typeof google !== "undefined") {
+            const mapOptions = {
+              center: coordinates,
+              zoom: 13,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              mapTypeControl: false,
+              fullscreenControl: false,
+              streetViewControl: false,
+              zoomControl: true,
+            };
+
+            const map = new google.maps.Map(
+              document.getElementById("modalMap"),
+              mapOptions
+            );
+
+            // Add marker for location
+            new google.maps.Marker({
+              position: coordinates,
+              map: map,
+              animation: google.maps.Animation.DROP,
+              icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 10,
+                fillColor: "#00838f",
+                fillOpacity: 0.8,
+                strokeColor: "#005662",
+                strokeWeight: 2,
+              },
+            });
+          } else {
+            // If Google Maps API not loaded, show a message
+            const mapEl = document.getElementById("modalMap");
+            mapEl.innerHTML =
+              '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--gray-600);text-align:center;padding:20px;">Map loading... <br>(In production, map would display here)</div>';
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

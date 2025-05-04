@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBuddy - Attraction Detail</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/location.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="/index.html">
+          <i class="fas fa-globe-americas"></i> TravelBuddy
+        </a>
+        <div class="controls">
+          <a class="link" href="/explore.html"
+            ><i class="fas fa-compass"></i> Explore</a
+          >
+          <a class="link" href="/profile.html"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+          <a class="button login-button" href="/login.html"
+            ><i class="fas fa-sign-in-alt"></i> Login</a
+          >
+      </nav>
+    </header>
+
+    <main>
+      <section class="location-banner">
+        <div class="banner-header">
+          <div class="banner-header-title">
+            <div class="title">Phewa Lake, Pokhara</div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.5</span>
+            </div>
+          </div>
+          <div class="bookmark-icon">Bookmark</div>
+        </div>
+        <div class="banner-image">
+          <img src="./images/phewa-lake.webp" alt="Phewa Lake in Pokhara" />
+          <div class="image-tag">Popular Destination</div>
+        </div>
+        <div class="location-description">
+          Phewa Lake, also known as Fewa Lake, is a freshwater lake in Nepal
+          located in the Pokhara Valley. It's the second largest lake in Nepal
+          and offers stunning views of the Annapurna mountain range. The lake is
+          famous for boating activities, the reflection of Mt. Machhapuchhre in
+          its waters, and the Tal Barahi Temple situated on an island in the
+          middle of the lake.
+        </div>
+        <div class="location-tags">
+          <div class="tag"><i class="fas fa-mountain"></i> Mountains</div>
+          <div class="tag"><i class="fas fa-water"></i> Lake</div>
+          <div class="tag">
+            <i class="fas fa-hiking"></i> Outdoor Activities
+          </div>
+          <div class="tag"><i class="fas fa-camera"></i> Scenic Views</div>
+        </div>
+      </section>
+
+      <section class="location-information">
+        <div class="additional-information">
+          <div class="distance">
+            <i class="fas fa-map-marker-alt"></i> 3Km away
+          </div>
+          <div class="title">About Phewa Lake</div>
+          <div class="content">
+            <p>
+              Phewa Lake is the centerpiece of Pokhara's natural beauty.
+              Surrounded by forest-covered hills and with the magnificent
+              Annapurna range reflecting on its surface on clear days, the lake
+              offers one of Nepal's most iconic views. The lake covers an area
+              of about 4.43 square kilometers and has an average depth of about
+              8.6 meters.
+            </p>
+            <p>
+              Visitors can enjoy boating, kayaking, and paddleboarding on the
+              lake. The eastern shore of the lake, known as Lakeside or Baidam,
+              is the tourist hub of Pokhara with numerous hotels, restaurants,
+              and shops. The western shore is less developed and offers more
+              tranquil surroundings with forest trails and small villages.
+            </p>
+            <p>
+              The lake also features the famous Tal Barahi Temple, a two-story
+              pagoda temple located on a small island about 500 meters from the
+              Lakeside. The temple is dedicated to the Hindu goddess Durga and
+              is an important religious site for locals and visitors alike.
+            </p>
+          </div>
+        </div>
+        <div class="additional-image">
+          <img
+            src="./images/phewa-lake.webp"
+            alt="Another view of Phewa Lake"
+          />
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="section-title">
+          <i class="fas fa-map-marked-alt"></i> Location Map
+        </div>
+        <div class="map-container">
+          <img src="./images/map-placeholder.jpg" alt="Map of Phewa Lake" />
+          <div class="map-controls">
+            <div class="map-button"><i class="fas fa-location-arrow"></i></div>
+            <div class="map-button"><i class="fas fa-directions"></i></div>
+            <div class="map-button"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="nearby-places">
+          <div class="nearby-title">Nearby Places</div>
+          <div class="nearby-items">
+            <div class="nearby-item">
+              <i class="fas fa-hotel"></i>
+              <span>Hotel Barahi - 0.8 km</span>
+            </div>
+            <div class="nearby-item">
+              <i class="fas fa-utensils"></i>
+              <span>Lakeside Restaurants - 1.2 km</span>
+            </div>
+            <div class="nearby-item">
+              <i class="fas fa-mountain"></i>
+              <span>Sarangkot Viewpoint - 5.6 km</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="itinerary-section">
+        <div class="section-title">
+          <i class="fas fa-route"></i> Suggested Itinerary
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">9:00 AM</div>
+            <div class="activity">
+              <h3>Start Your Day at Lakeside</h3>
+              <p>
+                Begin with a delicious breakfast at one of the lakeside cafes
+                while enjoying the early morning view of the mountains
+                reflecting on the lake.
+              </p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">10:30 AM</div>
+            <div class="activity">
+              <h3>Boating on Phewa Lake</h3>
+              <p>
+                Rent a colorful wooden boat or take a guided boat tour. Visit
+                the Tal Barahi Temple on the island in the middle of the lake.
+              </p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">1:00 PM</div>
+            <div class="activity">
+              <h3>Lunch Break</h3>
+              <p>
+                Enjoy traditional Nepali cuisine or international dishes at one
+                of the many restaurants along the lakeside strip.
+              </p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">2:30 PM</div>
+            <div class="activity">
+              <h3>Visit World Peace Pagoda</h3>
+              <p>
+                Trek up to the World Peace Pagoda (Shanti Stupa) for panoramic
+                views of the lake, Pokhara city, and the Annapurna mountain
+                range.
+              </p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">5:30 PM</div>
+            <div class="activity">
+              <h3>Sunset Viewing</h3>
+              <p>
+                Return to the lakeside to watch the stunning sunset over the
+                lake and mountains. Perfect for photography enthusiasts.
+              </p>
+              <button class="add-button">
+                <i class="fas fa-plus"></i> Add to My Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="section-title">
+          <i class="fas fa-star"></i> Reviews & Ratings
+        </div>
+
+        <div class="reviews-header">
+          <div class="rating-summary">
+            <div class="rating-number">4.7</div>
+            <div class="rating-stats">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="review-count">Based on 284 reviews</div>
+            </div>
+          </div>
+          <button class="write-review-btn">
+            <i class="fas fa-pen"></i> Write a Review
+          </button>
+        </div>
+
+        <div class="rating-distribution">
+          <div class="rating-bars">
+            <div class="rating-bar">
+              <div class="bar-label">5 <i class="fas fa-star"></i></div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 78%"></div>
+              </div>
+              <div class="bar-percentage">78%</div>
+            </div>
+            <div class="rating-bar">
+              <div class="bar-label">4 <i class="fas fa-star"></i></div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 15%"></div>
+              </div>
+              <div class="bar-percentage">15%</div>
+            </div>
+            <div class="rating-bar">
+              <div class="bar-label">3 <i class="fas fa-star"></i></div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 5%"></div>
+              </div>
+              <div class="bar-percentage">5%</div>
+            </div>
+            <div class="rating-bar">
+              <div class="bar-label">2 <i class="fas fa-star"></i></div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 1%"></div>
+              </div>
+              <div class="bar-percentage">1%</div>
+            </div>
+            <div class="rating-bar">
+              <div class="bar-label">1 <i class="fas fa-star"></i></div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 1%"></div>
+              </div>
+              <div class="bar-percentage">1%</div>
+            </div>
+          </div>
+
+          <div class="rating-categories">
+            <div class="category-item">
+              <div class="category-name">Scenery</div>
+              <div class="category-rating">
+                <div class="category-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="category-value">5.0</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-name">Activities</div>
+              <div class="category-rating">
+                <div class="category-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="category-value">4.5</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-name">Accessibility</div>
+              <div class="category-rating">
+                <div class="category-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-value">4.1</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-name">Value for Money</div>
+              <div class="category-rating">
+                <div class="category-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="category-value">4.7</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-name">Cleanliness</div>
+              <div class="category-rating">
+                <div class="category-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-value">4.0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-container">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">SJ</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Sarah Johnson</div>
+                <div class="review-date">Visited April 2025</div>
+              </div>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              Phewa Lake exceeded all my expectations! The boat ride to Tal
+              Barahi Temple was serene and the reflection of the Annapurna range
+              on the clear water was breathtaking. Make sure to visit during
+              early morning for the best views. Also, don't miss the sunset from
+              the lakeside - absolutely magical!
+            </div>
+            <div class="review-tags">
+              <div class="review-tag">Family Trip</div>
+              <div class="review-tag">Boating</div>
+              <div class="review-tag">Photography</div>
+            </div>
+            <div class="review-actions">
+              <button class="helpful-btn">
+                <i class="far fa-thumbs-up"></i> Helpful (32)
+              </button>
+              <div class="report-link">Report</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">RP</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Raj Patel</div>
+                <div class="review-date">Visited March 2025</div>
+              </div>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              The lake is beautiful but can get quite crowded during peak hours.
+              I recommend visiting in the early morning or late afternoon. The
+              boat rental prices are reasonable, and paddling around the lake
+              was a highlight of our trip. The lakeside restaurants offer great
+              food with amazing views.
+            </div>
+            <div class="review-tags">
+              <div class="review-tag">Solo Travel</div>
+              <div class="review-tag">Kayaking</div>
+              <div class="review-tag">Budget-friendly</div>
+            </div>
+            <div class="review-actions">
+              <button class="helpful-btn">
+                <i class="far fa-thumbs-up"></i> Helpful (18)
+              </button>
+              <div class="report-link">Report</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">EM</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Emma Martinez</div>
+                <div class="review-date">Visited February 2025</div>
+              </div>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              As a photographer, Phewa Lake was paradise. The mountains
+              reflecting in the water created stunning compositions. I highly
+              recommend taking the hike up to the World Peace Pagoda for
+              panoramic views of the lake. Sunrise there was incredible! The
+              boat ride to Tal Barahi Temple is also a must-do.
+            </div>
+            <div class="review-tags">
+              <div class="review-tag">Photography</div>
+              <div class="review-tag">Hiking</div>
+              <div class="review-tag">Temple Visit</div>
+            </div>
+            <div class="review-actions">
+              <button class="helpful-btn">
+                <i class="far fa-thumbs-up"></i> Helpful (24)
+              </button>
+              <div class="report-link">Report</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">TK</div>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Tom Kim</div>
+                <div class="review-date">Visited January 2025</div>
+              </div>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="review-content">
+              Great place to relax and enjoy nature. We rented a boat for a
+              couple of hours and had a peaceful time on the lake. The only
+              downside was that it was a bit too crowded near the boat rental
+              areas. Once you row further out, it becomes more serene. The
+              mountain views were partially obscured due to clouds during our
+              visit.
+            </div>
+            <div class="review-tags">
+              <div class="review-tag">Couple Trip</div>
+              <div class="review-tag">Relaxation</div>
+              <div class="review-tag">Nature</div>
+            </div>
+            <div class="review-actions">
+              <button class="helpful-btn">
+                <i class="far fa-thumbs-up"></i> Helpful (15)
+              </button>
+              <div class="report-link">Report</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="show-more-btn">
+          <i class="fas fa-chevron-down"></i> Show More Reviews
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <i class="fas fa-globe-americas"></i> TravelBuddy
+          </div>
+          <p>
+            Your trusted companion for authentic travel experiences around the
+            world.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to receive travel tips and exclusive offers</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="button">Subscribe</button>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TravelBuddy. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

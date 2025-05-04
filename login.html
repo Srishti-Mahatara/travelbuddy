@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBuddy - Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="/index.html">
+          <i class="fas fa-globe-americas"></i> TravelBuddy
+        </a>
+        <div class="controls">
+          <a class="link" href="/explore.html"
+            ><i class="fas fa-compass"></i> Explore</a
+          >
+          <a class="link" href="/profile.html"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-header">
+          <div class="login-logo">
+            <i class="fas fa-globe-americas"></i> TravelBuddy
+          </div>
+          <h1>Welcome Back</h1>
+          <p>Login to access your travel plans and bookmarks</p>
+        </div>
+
+        <div class="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-container">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                placeholder="youremail@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-container">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-options">
+            <div class="remember-me">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+
+          <button class="login-button">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </button>
+
+          <div class="divider">
+            <span>or continue with</span>
+          </div>
+
+          <div class="social-login">
+            <button class="social-button google">
+              <i class="fab fa-google"></i>
+            </button>
+            <button class="social-button facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="social-button apple">
+              <i class="fab fa-apple"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="signup-link">
+          <p>Don't have an account? <a href="/signup.html">Sign up</a></p>
+        </div>
+      </div>
+
+      <div class="login-image">
+        <div class="image-overlay">
+          <h2>Discover Amazing Places</h2>
+          <p>
+            Join thousands of travelers exploring the world with TravelBuddy
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <i class="fas fa-globe-americas"></i> TravelBuddy
+          </div>
+          <p>
+            Your trusted companion for authentic travel experiences around the
+            world.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to receive travel tips and exclusive offers</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="button">Subscribe</button>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TravelBuddy. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
